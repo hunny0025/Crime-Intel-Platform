@@ -1,0 +1,68 @@
+[
+  {
+    "transaction_id": "TXN-UPI-001",
+    "sender_account": {"account_number_last4": "4521", "holder_name": "Priya Sharma", "bank": "State Bank of India", "upi_id": "priya.sharma@sbi"},
+    "receiver_account": {"account_number_last4": "7832", "holder_name": "RS Trading Services", "bank": "ICICI Bank", "upi_id": "rstradingservices@ybl"},
+    "amount_inr": 100000,
+    "upi_ref": "UTR001234567890",
+    "timestamp": "2024-11-07T14:23:00+05:30",
+    "status": "SUCCESS",
+    "transaction_type": "UPI_TRANSFER",
+    "remark": "Investment ProfitSure"
+  },
+  {
+    "transaction_id": "TXN-UPI-002",
+    "sender_account": {"account_number_last4": "4521", "holder_name": "Priya Sharma", "bank": "State Bank of India", "upi_id": "priya.sharma@sbi"},
+    "receiver_account": {"account_number_last4": "7832", "holder_name": "RS Trading Services", "bank": "ICICI Bank", "upi_id": "rstradingservices@ybl"},
+    "amount_inr": 200000,
+    "upi_ref": "UTR001234567891",
+    "timestamp": "2024-11-10T11:45:00+05:30",
+    "status": "SUCCESS",
+    "transaction_type": "UPI_TRANSFER",
+    "remark": "Investment ProfitSure Premium"
+  },
+  {
+    "transaction_id": "TXN-UPI-003",
+    "sender_account": {"account_number_last4": "4521", "holder_name": "Priya Sharma", "bank": "State Bank of India", "upi_id": "priya.sharma@sbi"},
+    "receiver_account": {"account_number_last4": "7832", "holder_name": "RS Trading Services", "bank": "ICICI Bank", "upi_id": "rstradingservices@ybl"},
+    "amount_inr": 170000,
+    "upi_ref": "UTR001234567892",
+    "timestamp": "2024-11-12T16:30:00+05:30",
+    "status": "SUCCESS",
+    "transaction_type": "UPI_TRANSFER",
+    "remark": "Investment ProfitSure VIP"
+  },
+  {
+    "transaction_id": "TXN-UPI-004",
+    "sender_account": {"account_number_last4": "7832", "holder_name": "RS Trading Services", "bank": "ICICI Bank", "upi_id": "rstradingservices@ybl"},
+    "receiver_account": {"account_number_last4": "9901", "holder_name": "Akash Enterprises", "bank": "Axis Bank", "upi_id": "akashent@axisbank"},
+    "amount_inr": 350000,
+    "upi_ref": "UTR001234567893",
+    "timestamp": "2024-11-10T23:15:00+05:30",
+    "status": "SUCCESS",
+    "transaction_type": "UPI_TRANSFER",
+    "remark": "Business transfer"
+  },
+  {
+    "transaction_id": "TXN-UPI-005",
+    "sender_account": {"account_number_last4": "9901", "holder_name": "Akash Enterprises", "bank": "Axis Bank", "upi_id": "akashent@axisbank"},
+    "receiver_account": {"account_number_last4": "1123", "holder_name": "CryptoXchange India", "bank": "Yes Bank", "upi_id": "cryptoxchange@yesbank"},
+    "amount_inr": 300000,
+    "upi_ref": "UTR001234567894",
+    "timestamp": "2024-11-11T02:30:00+05:30",
+    "status": "SUCCESS",
+    "transaction_type": "UPI_TRANSFER",
+    "remark": "Crypto purchase"
+  },
+  {
+    "transaction_id": "TXN-UPI-006",
+    "sender_account": {"account_number_last4": "7832", "holder_name": "RS Trading Services", "bank": "ICICI Bank", "upi_id": "rstradingservices@ybl"},
+    "receiver_account": {"account_number_last4": "9901", "holder_name": "Akash Enterprises", "bank": "Axis Bank", "upi_id": "akashent@axisbank"},
+    "amount_inr": 170000,
+    "upi_ref": "UTR001234567895",
+    "timestamp": "2024-11-12T23:45:00+05:30",
+    "status": "SUCCESS",
+    "transaction_type": "UPI_TRANSFER",
+    "remark": "Business transfer"
+  }
+]

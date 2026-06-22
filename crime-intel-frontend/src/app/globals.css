@@ -1,0 +1,95 @@
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #0d0f13; /* base */
+    --foreground: #e8eaf0; /* text-primary */
+    
+    --card: #12151a; /* surface */
+    --card-foreground: #e8eaf0;
+    
+    --popover: #1e222b; /* overlay */
+    --popover-foreground: #e8eaf0;
+    
+    --primary: #4a9eff; /* intel-blue */
+    --primary-foreground: #080a0d; /* obsidian */
+    
+    --secondary: #171b22; /* elevated */
+    --secondary-foreground: #e8eaf0;
+    
+    --muted: #171b22;
+    --muted-foreground: #8b9ab8; /* text-secondary */
+    
+    --accent: #1e222b;
+    --accent-foreground: #4a9eff;
+    
+    --destructive: #f43f5e; /* intel-red */
+    --destructive-foreground: #e8eaf0;
+    
+    --border: #252a34;
+    --input: #252a34;
+    --ring: #4a9eff;
+    
+    --radius: 0.5rem;
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+@layer utilities {
+  /* Custom scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #080a0d; /* obsidian */
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #252a34; /* border */
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4a9eff; /* intel-blue */
+  }
+
+  /* Glassmorphism panels */
+  .glass-panel {
+    background: rgba(18, 21, 26, 0.75); /* surface with opacity */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(37, 42, 52, 0.4);
+  }
+  
+  .glass-panel-elevated {
+    background: rgba(23, 27, 34, 0.8); /* elevated with opacity */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(37, 42, 52, 0.6);
+  }
+
+  /* Glow effects */
+  .glow-blue {
+    box-shadow: 0 0 15px rgba(74, 158, 255, 0.15);
+  }
+  .glow-green {
+    box-shadow: 0 0 15px rgba(45, 212, 191, 0.15);
+  }
+  .glow-red {
+    box-shadow: 0 0 15px rgba(244, 63, 94, 0.15);
+  }
+  .glow-purple {
+    box-shadow: 0 0 15px rgba(167, 139, 250, 0.15);
+  }
+}

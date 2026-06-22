@@ -1,0 +1,8 @@
+.git
+.pytest_cache
+__pycache__
+*.pyc
+crime-intel-frontend
+node_modules
+venv
+.env

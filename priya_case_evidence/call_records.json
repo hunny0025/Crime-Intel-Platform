@@ -1,0 +1,20 @@
+[
+  {"call_id": "CDR-001", "caller": "+918765432109", "receiver": "+919876543210", "duration_seconds": 180, "timestamp": "2024-11-01T10:00:00+05:30", "cell_tower_location": "Gurugram Sector 29, Haryana", "call_type": "outgoing"},
+  {"call_id": "CDR-002", "caller": "+918765432109", "receiver": "+919876543210", "duration_seconds": 420, "timestamp": "2024-11-03T11:30:00+05:30", "cell_tower_location": "Gurugram Sector 29, Haryana", "call_type": "outgoing"},
+  {"call_id": "CDR-003", "caller": "+918765432109", "receiver": "+919876543210", "duration_seconds": 900, "timestamp": "2024-11-05T14:00:00+05:30", "cell_tower_location": "Gurugram Sector 44, Haryana", "call_type": "outgoing"},
+  {"call_id": "CDR-004", "caller": "+918765432109", "receiver": "+919876543210", "duration_seconds": 1080, "timestamp": "2024-11-07T10:00:00+05:30", "cell_tower_location": "Gurugram Sector 29, Haryana", "call_type": "outgoing"},
+  {"call_id": "CDR-005", "caller": "+918765432109", "receiver": "+919876543210", "duration_seconds": 600, "timestamp": "2024-11-10T09:00:00+05:30", "cell_tower_location": "Gurugram Sector 29, Haryana", "call_type": "outgoing"},
+  {"call_id": "CDR-006", "caller": "+918765432109", "receiver": "+919876543210", "duration_seconds": 360, "timestamp": "2024-11-12T11:45:00+05:30", "cell_tower_location": "Gurugram Sector 44, Haryana", "call_type": "outgoing"},
+  {"call_id": "CDR-007", "caller": "+918765432109", "receiver": "+919876543210", "duration_seconds": 240, "timestamp": "2024-11-14T11:15:00+05:30", "cell_tower_location": "Gurugram Sector 29, Haryana", "call_type": "outgoing"},
+  {"call_id": "CDR-008", "caller": "+918765432109", "receiver": "+919876543210", "duration_seconds": 480, "timestamp": "2024-11-14T15:45:00+05:30", "cell_tower_location": "Gurugram Sector 29, Haryana", "call_type": "outgoing"},
+  {"call_id": "CDR-009", "caller": "+918765432109", "receiver": "+919988776655", "duration_seconds": 300, "timestamp": "2024-11-07T15:00:00+05:30", "cell_tower_location": "Gurugram Sector 29, Haryana", "call_type": "outgoing"},
+  {"call_id": "CDR-010", "caller": "+918765432109", "receiver": "+919988776655", "duration_seconds": 540, "timestamp": "2024-11-10T22:30:00+05:30", "cell_tower_location": "Gurugram Sector 29, Haryana", "call_type": "outgoing"},
+  {"call_id": "CDR-011", "caller": "+918765432109", "receiver": "+919988776655", "duration_seconds": 420, "timestamp": "2024-11-11T01:00:00+05:30", "cell_tower_location": "Gurugram Sector 29, Haryana", "call_type": "outgoing"},
+  {"call_id": "CDR-012", "caller": "+918765432109", "receiver": "+919988776655", "duration_seconds": 360, "timestamp": "2024-11-12T23:00:00+05:30", "cell_tower_location": "Gurugram Sector 29, Haryana", "call_type": "outgoing"},
+  {"call_id": "CDR-013", "caller": "+919988776655", "receiver": "+918765432109", "duration_seconds": 240, "timestamp": "2024-11-10T23:30:00+05:30", "cell_tower_location": "Noida Sector 62, UP", "call_type": "incoming"},
+  {"call_id": "CDR-014", "caller": "+919988776655", "receiver": "+918765432109", "duration_seconds": 180, "timestamp": "2024-11-11T03:00:00+05:30", "cell_tower_location": "Noida Sector 62, UP", "call_type": "incoming"},
+  {"call_id": "CDR-015", "caller": "+919988776655", "receiver": "+918765432109", "duration_seconds": 300, "timestamp": "2024-11-13T10:00:00+05:30", "cell_tower_location": "Noida Sector 62, UP", "call_type": "incoming"},
+  {"call_id": "CDR-016", "caller": "+918765432109", "receiver": "+911800999999", "duration_seconds": 120, "timestamp": "2024-11-02T16:00:00+05:30", "cell_tower_location": "Gurugram Sector 29, Haryana", "call_type": "outgoing"},
+  {"call_id": "CDR-017", "caller": "+918765432109", "receiver": "+911800999999", "duration_seconds": 60, "timestamp": "2024-11-09T13:00:00+05:30", "cell_tower_location": "Gurugram Sector 44, Haryana", "call_type": "outgoing"},
+  {"call_id": "CDR-018", "caller": "+919876543210", "receiver": "+911800000000", "duration_seconds": 780, "timestamp": "2024-11-15T09:30:00+05:30", "cell_tower_location": "Gurugram Sector 14, Haryana", "call_type": "outgoing"}
+]

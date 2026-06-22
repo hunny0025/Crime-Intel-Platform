@@ -1,0 +1,1155 @@
+{
+  "_comment": "DRAFT — Legal team / supervisor should review element breakdowns before use beyond architecture demonstration.",
+  "statutes": [
+    {
+      "id": "st-bns",
+      "name": "Bharatiya Nyaya Sanhita, 2023",
+      "year": 2023,
+      "jurisdiction": "India"
+    },
+    {
+      "id": "st-bsa",
+      "name": "Bharatiya Sakshya Adhiniyam, 2023",
+      "year": 2023,
+      "jurisdiction": "India"
+    },
+    {
+      "id": "st-bnss",
+      "name": "Bharatiya Nagarik Suraksha Sanhita, 2023",
+      "year": 2023,
+      "jurisdiction": "India"
+    },
+    {
+      "id": "st-it",
+      "name": "Information Technology Act, 2000",
+      "year": 2000,
+      "jurisdiction": "India"
+    }
+  ],
+  "chapters": [
+    {
+      "id": "ch-bns-xvii",
+      "chapter_number": "XVII",
+      "title": "Of Offences Against Property",
+      "statute_id": "st-bns"
+    },
+    {
+      "id": "ch-bns-xviii",
+      "chapter_number": "XVIII",
+      "title": "Of Offences Relating to Documents and to Property Marks",
+      "statute_id": "st-bns"
+    },
+    {
+      "id": "ch-bns-xix",
+      "chapter_number": "XIX",
+      "title": "Of Criminal Intimidation, Insult and Annoyance",
+      "statute_id": "st-bns"
+    },
+    {
+      "id": "ch-bsa-v",
+      "chapter_number": "V",
+      "title": "Of Documentary Evidence",
+      "statute_id": "st-bsa"
+    },
+    {
+      "id": "ch-bsa-iii",
+      "chapter_number": "III",
+      "title": "Of Facts Which Need Not Be Proved",
+      "statute_id": "st-bsa"
+    },
+    {
+      "id": "ch-it-xi",
+      "chapter_number": "XI",
+      "title": "Offences",
+      "statute_id": "st-it"
+    },
+    {
+      "id": "ch-bnss-xii",
+      "chapter_number": "XII",
+      "title": "Information to the Police and their Powers to Investigate",
+      "statute_id": "st-bnss"
+    },
+    {
+      "id": "ch-bnss-v",
+      "chapter_number": "V",
+      "title": "Arrest of Persons",
+      "statute_id": "st-bnss"
+    }
+  ],
+  "sections": [
+    {
+      "id": "ls-it-66c",
+      "statute": "IT_Act_2000",
+      "statute_id": "st-it",
+      "chapter_id": "ch-it-xi",
+      "section_number": "66C",
+      "title": "Punishment for Identity Theft",
+      "summary": "Whoever fraudulently or dishonestly makes use of the electronic signature, password or any other unique identification feature of any other person.",
+      "elements": [
+        {
+          "id": "le-66c-1",
+          "section_id": "ls-it-66c",
+          "element_text": "Use of electronic signature, password, or unique identification feature",
+          "evidence_types_typically_required": ["device_seizure", "communication_records", "account_activity_logs"]
+        },
+        {
+          "id": "le-66c-2",
+          "section_id": "ls-it-66c",
+          "element_text": "Fraudulent or dishonest intent",
+          "evidence_types_typically_required": ["communication_records", "financial_records", "witness_statements"]
+        },
+        {
+          "id": "le-66c-3",
+          "section_id": "ls-it-66c",
+          "element_text": "Feature belongs to another person",
+          "evidence_types_typically_required": ["victim_statement", "account_ownership_records"]
+        }
+      ],
+      "mapped_crime_categories": ["cc-identity-theft", "cc-credential-theft", "cc-impersonation"]
+    },
+    {
+      "id": "ls-it-66d",
+      "statute": "IT_Act_2000",
+      "statute_id": "st-it",
+      "chapter_id": "ch-it-xi",
+      "section_number": "66D",
+      "title": "Punishment for Cheating by Personation using Computer Resource",
+      "summary": "Whoever by means of any communication device or computer resource cheats by personation.",
+      "elements": [
+        {
+          "id": "le-66d-1",
+          "section_id": "ls-it-66d",
+          "element_text": "Use of communication device or computer resource",
+          "evidence_types_typically_required": ["device_seizure", "network_logs"]
+        },
+        {
+          "id": "le-66d-2",
+          "section_id": "ls-it-66d",
+          "element_text": "Cheating by personation (pretending to be another person)",
+          "evidence_types_typically_required": ["communication_records", "account_activity_logs", "victim_statement"]
+        },
+        {
+          "id": "le-66d-3",
+          "section_id": "ls-it-66d",
+          "element_text": "Dishonest inducement to deliver property or alter/destroy valuable security",
+          "evidence_types_typically_required": ["financial_records", "transaction_logs"]
+        }
+      ],
+      "mapped_crime_categories": ["cc-impersonation", "cc-phishing", "cc-investment-scam"]
+    },
+    {
+      "id": "ls-bns-303",
+      "statute": "BNS_2023",
+      "statute_id": "st-bns",
+      "chapter_id": "ch-bns-xvii",
+      "section_number": "303",
+      "title": "Theft",
+      "summary": "Whoever, intending to take dishonestly any movable property out of the possession of any person without that person's consent, moves that property in order to such taking.",
+      "elements": [
+        {
+          "id": "le-bns303-1",
+          "section_id": "ls-bns-303",
+          "element_text": "Movable property existed and was in the possession of a person",
+          "evidence_types_typically_required": ["victim_statement", "ownership_records", "documentary_evidence"]
+        },
+        {
+          "id": "le-bns303-2",
+          "section_id": "ls-bns-303",
+          "element_text": "The accused moved the property",
+          "evidence_types_typically_required": ["cctv", "witness_statements", "digital_forensics"]
+        },
+        {
+          "id": "le-bns303-3",
+          "section_id": "ls-bns-303",
+          "element_text": "The movement was without the consent of the possessor",
+          "evidence_types_typically_required": ["victim_statement", "witness_statements"]
+        },
+        {
+          "id": "le-bns303-4",
+          "section_id": "ls-bns-303",
+          "element_text": "Dishonest intention to take the property",
+          "evidence_types_typically_required": ["communication_records", "financial_records", "witness_statements"]
+        },
+        {
+          "id": "le-bns303-5",
+          "section_id": "ls-bns-303",
+          "element_text": "The property was taken out of the possession of the victim",
+          "evidence_types_typically_required": ["victim_statement", "recovery_memo", "seizure_memo"]
+        }
+      ],
+      "mapped_crime_categories": ["cc-data-theft", "cc-identity-theft"]
+    },
+    {
+      "id": "ls-bns-308",
+      "statute": "BNS_2023",
+      "statute_id": "st-bns",
+      "chapter_id": "ch-bns-xvii",
+      "section_number": "308",
+      "title": "Extortion",
+      "summary": "Whoever intentionally puts any person in fear of any injury to that person or any other, and thereby dishonestly induces the person so put in fear to deliver to any person any property, or valuable security.",
+      "elements": [
+        {
+          "id": "le-bns308-1",
+          "section_id": "ls-bns-308",
+          "element_text": "The accused intentionally put any person in fear of injury",
+          "evidence_types_typically_required": ["communication_records", "victim_statement", "witness_statements"]
+        },
+        {
+          "id": "le-bns308-2",
+          "section_id": "ls-bns-308",
+          "element_text": "The fear induced was of injury to person, reputation, or property",
+          "evidence_types_typically_required": ["communication_records", "threat_evidence", "victim_statement"]
+        },
+        {
+          "id": "le-bns308-3",
+          "section_id": "ls-bns-308",
+          "element_text": "Dishonest inducement to deliver property or valuable security",
+          "evidence_types_typically_required": ["financial_records", "transaction_logs", "victim_statement"]
+        },
+        {
+          "id": "le-bns308-4",
+          "section_id": "ls-bns-308",
+          "element_text": "Delivery of property or signing of valuable security by the victim",
+          "evidence_types_typically_required": ["financial_records", "bank_statements", "documentary_evidence"]
+        }
+      ],
+      "mapped_crime_categories": ["cc-ransomware", "cc-sextortion", "cc-cyber-extortion"]
+    },
+    {
+      "id": "ls-bns-316",
+      "statute": "BNS_2023",
+      "statute_id": "st-bns",
+      "chapter_id": "ch-bns-xvii",
+      "section_number": "316",
+      "title": "Criminal Breach of Trust",
+      "summary": "Whoever, being in any manner entrusted with property, or with any dominion over property, dishonestly misappropriates or converts to his own use that property.",
+      "elements": [
+        {
+          "id": "le-bns316-1",
+          "section_id": "ls-bns-316",
+          "element_text": "The accused was entrusted with property or dominion over property",
+          "evidence_types_typically_required": ["documentary_evidence", "employment_records", "contractual_agreements"]
+        },
+        {
+          "id": "le-bns316-2",
+          "section_id": "ls-bns-316",
+          "element_text": "The accused dishonestly misappropriated or converted the property",
+          "evidence_types_typically_required": ["financial_records", "bank_statements", "audit_reports"]
+        },
+        {
+          "id": "le-bns316-3",
+          "section_id": "ls-bns-316",
+          "element_text": "Violation of any direction of law or legal contract regarding the property",
+          "evidence_types_typically_required": ["documentary_evidence", "contractual_agreements", "legal_notices"]
+        },
+        {
+          "id": "le-bns316-4",
+          "section_id": "ls-bns-316",
+          "element_text": "Dishonest intention at the time of misappropriation",
+          "evidence_types_typically_required": ["communication_records", "financial_records", "witness_statements"]
+        }
+      ],
+      "mapped_crime_categories": ["cc-financial-fraud", "cc-corporate-fraud", "cc-embezzlement"]
+    },
+    {
+      "id": "ls-bns-318",
+      "statute": "BNS_2023",
+      "statute_id": "st-bns",
+      "chapter_id": "ch-bns-xvii",
+      "section_number": "318",
+      "title": "Cheating",
+      "summary": "Whoever by deceiving any person, fraudulently or dishonestly induces the person so deceived to deliver any property, or to consent to the retention thereof.",
+      "elements": [
+        {
+          "id": "le-bns318-1",
+          "section_id": "ls-bns-318",
+          "element_text": "Deception of the victim",
+          "evidence_types_typically_required": ["communication_records", "witness_statements"]
+        },
+        {
+          "id": "le-bns318-2",
+          "section_id": "ls-bns-318",
+          "element_text": "Fraudulent or dishonest inducement",
+          "evidence_types_typically_required": ["communication_records", "financial_records"]
+        },
+        {
+          "id": "le-bns318-3",
+          "section_id": "ls-bns-318",
+          "element_text": "Delivery of property or consent to retention",
+          "evidence_types_typically_required": ["financial_records", "transaction_logs", "bank_statements"]
+        }
+      ],
+      "mapped_crime_categories": ["cc-financial-fraud", "cc-investment-scam", "cc-phishing", "cc-upi-fraud"]
+    },
+    {
+      "id": "ls-bns-318-4",
+      "statute": "BNS_2023",
+      "statute_id": "st-bns",
+      "chapter_id": "ch-bns-xvii",
+      "section_number": "318(4)",
+      "title": "Cheating with Knowledge of Delivery",
+      "summary": "Whoever cheats with the knowledge that he is likely thereby to cause wrongful loss to a person whose interest in the transaction he was bound to protect.",
+      "elements": [
+        {
+          "id": "le-bns318-4-1",
+          "section_id": "ls-bns-318-4",
+          "element_text": "Cheating as defined in Section 318 established",
+          "evidence_types_typically_required": ["communication_records", "financial_records", "victim_statement"]
+        },
+        {
+          "id": "le-bns318-4-2",
+          "section_id": "ls-bns-318-4",
+          "element_text": "Knowledge that the act is likely to cause wrongful loss",
+          "evidence_types_typically_required": ["communication_records", "financial_records", "expert_opinion"]
+        },
+        {
+          "id": "le-bns318-4-3",
+          "section_id": "ls-bns-318-4",
+          "element_text": "The accused was bound to protect the victim's interest in the transaction",
+          "evidence_types_typically_required": ["contractual_agreements", "employment_records", "fiduciary_evidence"]
+        }
+      ],
+      "mapped_crime_categories": ["cc-financial-fraud", "cc-investment-scam", "cc-corporate-fraud"]
+    },
+    {
+      "id": "ls-bns-319",
+      "statute": "BNS_2023",
+      "statute_id": "st-bns",
+      "chapter_id": "ch-bns-xvii",
+      "section_number": "319",
+      "title": "Cheating by Personation",
+      "summary": "A person is said to cheat by personation if he cheats by pretending to be some other person, or by knowingly substituting one person for another.",
+      "elements": [
+        {
+          "id": "le-bns319-1",
+          "section_id": "ls-bns-319",
+          "element_text": "Pretending to be some other person or knowingly substituting one person for another",
+          "evidence_types_typically_required": ["communication_records", "account_activity_logs", "victim_statement"]
+        },
+        {
+          "id": "le-bns319-2",
+          "section_id": "ls-bns-319",
+          "element_text": "By such personation, the accused committed cheating",
+          "evidence_types_typically_required": ["financial_records", "transaction_logs", "witness_statements"]
+        },
+        {
+          "id": "le-bns319-3",
+          "section_id": "ls-bns-319",
+          "element_text": "Representation of the identity of the pretended person",
+          "evidence_types_typically_required": ["device_seizure", "digital_forensics", "account_activity_logs"]
+        }
+      ],
+      "mapped_crime_categories": ["cc-impersonation", "cc-identity-theft", "cc-phishing"]
+    },
+    {
+      "id": "ls-bns-336",
+      "statute": "BNS_2023",
+      "statute_id": "st-bns",
+      "chapter_id": "ch-bns-xviii",
+      "section_number": "336",
+      "title": "Forgery",
+      "summary": "Whoever makes any false document or false electronic record or part thereof, with intent to cause damage or injury.",
+      "elements": [
+        {
+          "id": "le-bns336-1",
+          "section_id": "ls-bns-336",
+          "element_text": "Creation of false document or electronic record",
+          "evidence_types_typically_required": ["device_seizure", "document_analysis", "digital_forensics"]
+        },
+        {
+          "id": "le-bns336-2",
+          "section_id": "ls-bns-336",
+          "element_text": "Intent to cause damage or injury, or to support a claim/title",
+          "evidence_types_typically_required": ["communication_records", "financial_records", "witness_statements"]
+        },
+        {
+          "id": "le-bns336-3",
+          "section_id": "ls-bns-336",
+          "element_text": "The document/record is made to appear as if it was made by authority of another person who did not authorize it",
+          "evidence_types_typically_required": ["document_analysis", "expert_opinion", "victim_statement"]
+        },
+        {
+          "id": "le-bns336-4",
+          "section_id": "ls-bns-336",
+          "element_text": "The false document/record was used or intended to be used as genuine",
+          "evidence_types_typically_required": ["communication_records", "documentary_evidence", "witness_statements"]
+        }
+      ],
+      "mapped_crime_categories": ["cc-identity-theft", "cc-aadhaar-misuse", "cc-document-forgery"]
+    },
+    {
+      "id": "ls-bns-340",
+      "statute": "BNS_2023",
+      "statute_id": "st-bns",
+      "chapter_id": "ch-bns-xviii",
+      "section_number": "340",
+      "title": "Forgery for Purpose of Cheating",
+      "summary": "Whoever commits forgery intending that the document or electronic record forged shall be used for the purpose of cheating.",
+      "elements": [
+        {
+          "id": "le-bns340-1",
+          "section_id": "ls-bns-340",
+          "element_text": "Forgery as defined in Section 336 established",
+          "evidence_types_typically_required": ["device_seizure", "document_analysis", "digital_forensics"]
+        },
+        {
+          "id": "le-bns340-2",
+          "section_id": "ls-bns-340",
+          "element_text": "Intent that the forged document be used for cheating",
+          "evidence_types_typically_required": ["communication_records", "financial_records", "victim_statement"]
+        },
+        {
+          "id": "le-bns340-3",
+          "section_id": "ls-bns-340",
+          "element_text": "Actual or attempted use of the forged document for cheating",
+          "evidence_types_typically_required": ["transaction_logs", "bank_statements", "documentary_evidence"]
+        }
+      ],
+      "mapped_crime_categories": ["cc-financial-fraud", "cc-document-forgery", "cc-aadhaar-misuse"]
+    },
+    {
+      "id": "ls-bns-351",
+      "statute": "BNS_2023",
+      "statute_id": "st-bns",
+      "chapter_id": "ch-bns-xix",
+      "section_number": "351",
+      "title": "Criminal Intimidation",
+      "summary": "Whoever threatens another with any injury to his person, reputation, or property, or to the person or reputation of any one in whom that person is interested, with intent to cause alarm.",
+      "elements": [
+        {
+          "id": "le-bns351-1",
+          "section_id": "ls-bns-351",
+          "element_text": "Threat of injury to person, reputation, or property",
+          "evidence_types_typically_required": ["communication_records", "victim_statement", "witness_statements"]
+        },
+        {
+          "id": "le-bns351-2",
+          "section_id": "ls-bns-351",
+          "element_text": "Intent to cause alarm to the person threatened",
+          "evidence_types_typically_required": ["communication_records", "threat_evidence", "digital_forensics"]
+        },
+        {
+          "id": "le-bns351-3",
+          "section_id": "ls-bns-351",
+          "element_text": "The threat was communicated to the person threatened or to a person in whom that person is interested",
+          "evidence_types_typically_required": ["communication_records", "network_logs", "victim_statement"]
+        }
+      ],
+      "mapped_crime_categories": ["cc-cyber-stalking", "cc-cyber-extortion", "cc-sextortion", "cc-ransomware"]
+    },
+    {
+      "id": "ls-it-43",
+      "statute": "IT_Act_2000",
+      "statute_id": "st-it",
+      "chapter_id": "ch-it-xi",
+      "section_number": "43",
+      "title": "Penalty and Compensation for Damage to Computer System",
+      "summary": "Access or secure access to computer, computer system or computer network without permission; or download, copy, extract data, database or information from such system.",
+      "elements": [
+        {
+          "id": "le-it43-1",
+          "section_id": "ls-it-43",
+          "element_text": "Unauthorized access to computer system or network",
+          "evidence_types_typically_required": ["network_logs", "access_logs", "digital_forensics"]
+        },
+        {
+          "id": "le-it43-2",
+          "section_id": "ls-it-43",
+          "element_text": "Downloading, copying, or extracting data without authorization",
+          "evidence_types_typically_required": ["device_seizure", "network_logs", "data_exfiltration_evidence"]
+        },
+        {
+          "id": "le-it43-3",
+          "section_id": "ls-it-43",
+          "element_text": "Introduction of virus or contaminant",
+          "evidence_types_typically_required": ["malware_analysis", "device_seizure", "network_logs"]
+        }
+      ],
+      "mapped_crime_categories": ["cc-hacking", "cc-system-intrusion", "cc-ransomware", "cc-malware"]
+    },
+    {
+      "id": "ls-it-66",
+      "statute": "IT_Act_2000",
+      "statute_id": "st-it",
+      "chapter_id": "ch-it-xi",
+      "section_number": "66",
+      "title": "Computer Related Offences",
+      "summary": "If any person, dishonestly or fraudulently, does any act referred to in section 43, he shall be punishable with imprisonment for a term which may extend to three years or with fine which may extend to five lakh rupees or with both.",
+      "elements": [
+        {
+          "id": "le-it66-1",
+          "section_id": "ls-it-66",
+          "element_text": "Commission of any act referred to in Section 43",
+          "evidence_types_typically_required": ["network_logs", "access_logs", "digital_forensics"]
+        },
+        {
+          "id": "le-it66-2",
+          "section_id": "ls-it-66",
+          "element_text": "The act was done dishonestly or fraudulently",
+          "evidence_types_typically_required": ["communication_records", "financial_records", "digital_forensics"]
+        },
+        {
+          "id": "le-it66-3",
+          "section_id": "ls-it-66",
+          "element_text": "Damage or destruction of data, database, or computer system",
+          "evidence_types_typically_required": ["device_seizure", "system_logs", "digital_forensics"]
+        },
+        {
+          "id": "le-it66-4",
+          "section_id": "ls-it-66",
+          "element_text": "Diminishing the value or utility of data or affecting it injuriously",
+          "evidence_types_typically_required": ["expert_opinion", "damage_assessment", "victim_statement"]
+        }
+      ],
+      "mapped_crime_categories": ["cc-hacking", "cc-system-intrusion", "cc-data-destruction"]
+    },
+    {
+      "id": "ls-it-66b",
+      "statute": "IT_Act_2000",
+      "statute_id": "st-it",
+      "chapter_id": "ch-it-xi",
+      "section_number": "66B",
+      "title": "Dishonestly Receiving Stolen Computer Resource or Communication Device",
+      "summary": "Whoever dishonestly receives or retains any stolen computer resource or communication device knowing or having reason to believe the same to be stolen.",
+      "elements": [
+        {
+          "id": "le-it66b-1",
+          "section_id": "ls-it-66b",
+          "element_text": "Receipt or retention of computer resource or communication device",
+          "evidence_types_typically_required": ["device_seizure", "recovery_memo", "witness_statements"]
+        },
+        {
+          "id": "le-it66b-2",
+          "section_id": "ls-it-66b",
+          "element_text": "The resource or device was stolen",
+          "evidence_types_typically_required": ["victim_statement", "theft_complaint", "ownership_records"]
+        },
+        {
+          "id": "le-it66b-3",
+          "section_id": "ls-it-66b",
+          "element_text": "Knowledge or reason to believe the resource was stolen",
+          "evidence_types_typically_required": ["communication_records", "financial_records", "circumstantial_evidence"]
+        }
+      ],
+      "mapped_crime_categories": ["cc-data-theft", "cc-receiving-stolen-property"]
+    },
+    {
+      "id": "ls-it-66e",
+      "statute": "IT_Act_2000",
+      "statute_id": "st-it",
+      "chapter_id": "ch-it-xi",
+      "section_number": "66E",
+      "title": "Punishment for Violation of Privacy",
+      "summary": "Whoever, intentionally or knowingly captures, publishes or transmits the image of a private area of any person without his or her consent.",
+      "elements": [
+        {
+          "id": "le-it66e-1",
+          "section_id": "ls-it-66e",
+          "element_text": "Intentional or knowing capture, publication, or transmission of image",
+          "evidence_types_typically_required": ["device_seizure", "digital_forensics", "communication_records"]
+        },
+        {
+          "id": "le-it66e-2",
+          "section_id": "ls-it-66e",
+          "element_text": "The image is of a private area of a person",
+          "evidence_types_typically_required": ["digital_forensics", "expert_opinion"]
+        },
+        {
+          "id": "le-it66e-3",
+          "section_id": "ls-it-66e",
+          "element_text": "Without the consent of the person",
+          "evidence_types_typically_required": ["victim_statement", "witness_statements"]
+        }
+      ],
+      "mapped_crime_categories": ["cc-cyber-stalking", "cc-voyeurism", "cc-sextortion"]
+    },
+    {
+      "id": "ls-it-67",
+      "statute": "IT_Act_2000",
+      "statute_id": "st-it",
+      "chapter_id": "ch-it-xi",
+      "section_number": "67",
+      "title": "Punishment for Publishing or Transmitting Obscene Material",
+      "summary": "Whoever publishes or transmits or causes to be published or transmitted in the electronic form, any material which is lascivious or appeals to the prurient interest.",
+      "elements": [
+        {
+          "id": "le-it67-1",
+          "section_id": "ls-it-67",
+          "element_text": "Publication or transmission of material in electronic form",
+          "evidence_types_typically_required": ["device_seizure", "digital_forensics", "network_logs"]
+        },
+        {
+          "id": "le-it67-2",
+          "section_id": "ls-it-67",
+          "element_text": "The material is lascivious or appeals to the prurient interest",
+          "evidence_types_typically_required": ["digital_forensics", "expert_opinion"]
+        },
+        {
+          "id": "le-it67-3",
+          "section_id": "ls-it-67",
+          "element_text": "The effect of such publication is to tend to deprave and corrupt persons",
+          "evidence_types_typically_required": ["expert_opinion", "victim_statement"]
+        }
+      ],
+      "mapped_crime_categories": ["cc-obscene-content", "cc-csam"]
+    },
+    {
+      "id": "ls-bsa-61",
+      "statute": "BSA_2023",
+      "statute_id": "st-bsa",
+      "chapter_id": "ch-bsa-v",
+      "section_number": "61",
+      "title": "Proof of Contents of Electronic Records",
+      "summary": "The contents of electronic records may be proved by any person who has personal knowledge of the contents or has an electronic record certified by an authorized person.",
+      "elements": [
+        {
+          "id": "le-bsa61-1",
+          "section_id": "ls-bsa-61",
+          "element_text": "Electronic record exists and contains relevant information",
+          "evidence_types_typically_required": ["device_seizure", "digital_forensics"]
+        },
+        {
+          "id": "le-bsa61-2",
+          "section_id": "ls-bsa-61",
+          "element_text": "Person with personal knowledge of contents or certification authority available",
+          "evidence_types_typically_required": ["witness_statements", "integrity_certificate"]
+        },
+        {
+          "id": "le-bsa61-3",
+          "section_id": "ls-bsa-61",
+          "element_text": "Authentication of the electronic record through hash or other cryptographic method",
+          "evidence_types_typically_required": ["integrity_certificate", "hash_verification"]
+        }
+      ],
+      "mapped_crime_categories": []
+    },
+    {
+      "id": "ls-bsa-63",
+      "statute": "BSA_2023",
+      "statute_id": "st-bsa",
+      "chapter_id": "ch-bsa-v",
+      "section_number": "63",
+      "title": "Admissibility of Electronic Records",
+      "summary": "Special provisions regarding admissibility of electronic records as secondary evidence, requiring cryptographic hashing, hash chain validation, and custodian certificates.",
+      "elements": [
+        {
+          "id": "le-bsa63-1",
+          "section_id": "ls-bsa-63",
+          "element_text": "Cryptographic integrity of the source device",
+          "evidence_types_typically_required": ["device_seizure", "digital_forensics", "integrity_certificate"]
+        },
+        {
+          "id": "le-bsa63-2",
+          "section_id": "ls-bsa-63",
+          "element_text": "Accompanying certificate of custodian",
+          "evidence_types_typically_required": ["integrity_certificate", "witness_statement"]
+        }
+      ],
+      "mapped_crime_categories": []
+    },
+    {
+      "id": "ls-bsa-65",
+      "statute": "BSA_2023",
+      "statute_id": "st-bsa",
+      "chapter_id": "ch-bsa-v",
+      "section_number": "65",
+      "title": "Special Provisions as to Evidence Relating to Electronic Record",
+      "summary": "In any proceedings involving an electronic record, the opinions of the Examiner of Electronic Evidence appointed under section 79A of the IT Act shall be relevant facts.",
+      "elements": [
+        {
+          "id": "le-bsa65-1",
+          "section_id": "ls-bsa-65",
+          "element_text": "Electronic record is subject to proceedings",
+          "evidence_types_typically_required": ["device_seizure", "digital_forensics"]
+        },
+        {
+          "id": "le-bsa65-2",
+          "section_id": "ls-bsa-65",
+          "element_text": "Opinion of Examiner of Electronic Evidence obtained",
+          "evidence_types_typically_required": ["expert_opinion", "laboratory_report"]
+        },
+        {
+          "id": "le-bsa65-3",
+          "section_id": "ls-bsa-65",
+          "element_text": "The examiner is duly appointed under Section 79A IT Act",
+          "evidence_types_typically_required": ["appointment_document", "expert_credentials"]
+        }
+      ],
+      "mapped_crime_categories": []
+    },
+    {
+      "id": "ls-bnss-173",
+      "statute": "BNSS_2023",
+      "statute_id": "st-bnss",
+      "chapter_id": "ch-bnss-xii",
+      "section_number": "173",
+      "title": "FIR Registration",
+      "summary": "Information relating to the commission of a cognizable offence given to an officer in charge of a police station shall be recorded and a copy given to the informant.",
+      "elements": [
+        {
+          "id": "le-bnss173-1",
+          "section_id": "ls-bnss-173",
+          "element_text": "Information of cognizable offence received by police station",
+          "evidence_types_typically_required": ["complaint_document", "victim_statement"]
+        },
+        {
+          "id": "le-bnss173-2",
+          "section_id": "ls-bnss-173",
+          "element_text": "FIR reduced to writing and signed by informant",
+          "evidence_types_typically_required": ["fir_document", "informant_statement"]
+        },
+        {
+          "id": "le-bnss173-3",
+          "section_id": "ls-bnss-173",
+          "element_text": "Copy of FIR given to informant free of cost",
+          "evidence_types_typically_required": ["fir_receipt", "acknowledgment"]
+        }
+      ],
+      "mapped_crime_categories": []
+    },
+    {
+      "id": "ls-bnss-185",
+      "statute": "BNSS_2023",
+      "statute_id": "st-bnss",
+      "chapter_id": "ch-bnss-xii",
+      "section_number": "185",
+      "title": "Search and Seizure",
+      "summary": "Powers of police officer to search place and seize property under authorization from Magistrate or on recorded reasons to believe.",
+      "elements": [
+        {
+          "id": "le-bnss185-1",
+          "section_id": "ls-bnss-185",
+          "element_text": "Authorization from Magistrate (warrant) or recorded grounds of belief",
+          "evidence_types_typically_required": ["search_authorization", "warrant_document"]
+        },
+        {
+          "id": "le-bnss185-2",
+          "section_id": "ls-bnss-185",
+          "element_text": "Search conducted in presence of two independent witnesses",
+          "evidence_types_typically_required": ["seizure_memo", "witness_statements"]
+        },
+        {
+          "id": "le-bnss185-3",
+          "section_id": "ls-bnss-185",
+          "element_text": "Detailed seizure memo prepared and signed",
+          "evidence_types_typically_required": ["seizure_memo", "witness_statements"]
+        },
+        {
+          "id": "le-bnss185-4",
+          "section_id": "ls-bnss-185",
+          "element_text": "Copy of seizure list delivered to occupant",
+          "evidence_types_typically_required": ["seizure_memo", "delivery_receipt"]
+        }
+      ],
+      "mapped_crime_categories": []
+    }
+  ],
+  "definitions": [
+    {
+      "id": "def-bsa-doc",
+      "term": "Electronic Record",
+      "text": "Electronic record means any data, record or data generated, image or sound stored, received or sent in an electronic form under section 63 of BSA 2023.",
+      "section_id": "ls-bsa-63"
+    },
+    {
+      "id": "def-it-computer",
+      "term": "Computer",
+      "text": "Computer means any electronic, magnetic, optical or other high-speed data processing device or system which performs logical, arithmetic and memory functions by manipulations of electronic, magnetic or optical impulses.",
+      "section_id": "ls-it-43"
+    },
+    {
+      "id": "def-it-commsys",
+      "term": "Computer System",
+      "text": "Computer system means a device or collection of devices, including input and output support devices and excluding calculators, which are not programmable and capable of being used in conjunction with external files.",
+      "section_id": "ls-it-43"
+    },
+    {
+      "id": "def-it-commdevice",
+      "term": "Communication Device",
+      "text": "Communication device means cell phones, personal digital assistant or combination of both or any other device used to communicate, send or transmit any text, video, audio or image.",
+      "section_id": "ls-it-66d"
+    },
+    {
+      "id": "def-bns-dishonesty",
+      "term": "Dishonestly",
+      "text": "Whoever does anything with the intention of causing wrongful gain to one person or wrongful loss to another person, is said to do that thing dishonestly.",
+      "section_id": "ls-bns-318"
+    },
+    {
+      "id": "def-bns-fraudulently",
+      "term": "Fraudulently",
+      "text": "A person is said to do a thing fraudulently if he does that thing with intent to defraud but not otherwise.",
+      "section_id": "ls-bns-318"
+    },
+    {
+      "id": "def-bns-movable",
+      "term": "Movable Property",
+      "text": "The words 'movable property' are intended to include corporeal property of every description except land and things attached to the earth or permanently fastened to anything which is attached to the earth.",
+      "section_id": "ls-bns-303"
+    },
+    {
+      "id": "def-bns-document",
+      "term": "Document",
+      "text": "The word 'document' denotes any matter expressed or described upon any substance by means of letters, figures or marks, or by more than one of those means, intended to be used, or which may be used, as evidence of that matter.",
+      "section_id": "ls-bns-336"
+    },
+    {
+      "id": "def-it-eSignature",
+      "term": "Electronic Signature",
+      "text": "Electronic signature means authentication of any electronic record by a subscriber by means of the electronic technique specified in the second schedule and includes digital signature.",
+      "section_id": "ls-it-66c"
+    },
+    {
+      "id": "def-bns-injury",
+      "term": "Injury",
+      "text": "The word injury denotes any harm whatever illegally caused to any person, in body, mind, reputation or property.",
+      "section_id": "ls-bns-351"
+    }
+  ],
+  "exceptions": [
+    {
+      "id": "exc-bns-mistake",
+      "title": "Act done by a person bound, or by mistake of fact believing himself bound, by law",
+      "text": "Nothing is an offence which is done by a person who is, or who by reason of a mistake of fact and not by reason of a mistake of law in good faith believes himself to be, bound by law to do it.",
+      "applies_to_section_ids": ["ls-bns-318", "ls-bns-336", "ls-bns-303", "ls-bns-316"]
+    },
+    {
+      "id": "exc-bns-good-faith",
+      "title": "Act done in good faith for benefit of person without consent",
+      "text": "Nothing is an offence by reason that it causes, or that it is intended to cause, or that it is known to be likely to cause, any harm, if it be done in good faith for the purpose of preventing or avoiding other harm to person or property.",
+      "applies_to_section_ids": ["ls-bns-303", "ls-bns-316"]
+    },
+    {
+      "id": "exc-bns-consent",
+      "title": "Act to which consent given under fear or misconception",
+      "text": "A consent is not such a consent as is intended by any section of this Sanhita if the consent is given by a person under fear of injury, or under a misconception of fact.",
+      "applies_to_section_ids": ["ls-bns-308", "ls-bns-318"]
+    },
+    {
+      "id": "exc-bns-private-defence",
+      "title": "Right of Private Defence",
+      "text": "Nothing is an offence which is done in the exercise of the right of private defence. Every person has a right to defend his own body and the body of any other person against any offence affecting the human body.",
+      "applies_to_section_ids": ["ls-bns-303", "ls-bns-308"]
+    },
+    {
+      "id": "exc-bns-accident",
+      "title": "Act done by accident in good faith without criminal intention",
+      "text": "Nothing is an offence which is done by accident or misfortune, and without any criminal intention or knowledge in the doing of a lawful act in a lawful manner by lawful means and with proper care and caution.",
+      "applies_to_section_ids": ["ls-bns-303", "ls-bns-316", "ls-bns-318", "ls-bns-336"]
+    },
+    {
+      "id": "exc-it-fair-use",
+      "title": "Government or Authorized Agency Access",
+      "text": "Any person authorized by the government or any officer specially authorized may intercept, monitor or decrypt information as per prescribed procedure. Such access shall not constitute an offence under Sections 43 and 66.",
+      "applies_to_section_ids": ["ls-it-43", "ls-it-66"]
+    },
+    {
+      "id": "exc-bns-minor",
+      "title": "Act of Child Above Seven and Under Twelve Without Sufficient Maturity",
+      "text": "Nothing is an offence which is done by a child above seven years of age and under twelve, who has not attained sufficient maturity of understanding to judge of the nature and consequences of his conduct on that occasion.",
+      "applies_to_section_ids": ["ls-bns-303", "ls-bns-308", "ls-bns-316", "ls-bns-318", "ls-bns-336", "ls-bns-351"]
+    },
+    {
+      "id": "exc-bns-insanity",
+      "title": "Act of a Person of Unsound Mind",
+      "text": "Nothing is an offence which is done by a person who, at the time of doing it, by reason of unsoundness of mind, is incapable of knowing the nature of the act, or that he is doing what is either wrong or contrary to law.",
+      "applies_to_section_ids": ["ls-bns-303", "ls-bns-308", "ls-bns-316", "ls-bns-318", "ls-bns-336", "ls-bns-351"]
+    }
+  ],
+  "punishments": [
+    {
+      "id": "pun-it-66c",
+      "punishment_type": "imprisonment_and_fine",
+      "duration": "3 years",
+      "amount": "100000 INR",
+      "section_id": "ls-it-66c"
+    },
+    {
+      "id": "pun-it-66d",
+      "punishment_type": "imprisonment_and_fine",
+      "duration": "3 years",
+      "amount": "100000 INR",
+      "section_id": "ls-it-66d"
+    },
+    {
+      "id": "pun-bns-303",
+      "punishment_type": "imprisonment_or_fine",
+      "duration": "3 years",
+      "amount": "variable",
+      "section_id": "ls-bns-303"
+    },
+    {
+      "id": "pun-bns-308",
+      "punishment_type": "imprisonment_or_fine_or_both",
+      "duration": "3 years",
+      "amount": "variable",
+      "section_id": "ls-bns-308"
+    },
+    {
+      "id": "pun-bns-316",
+      "punishment_type": "imprisonment_or_fine_or_both",
+      "duration": "3 years (7 years if public servant or banker)",
+      "amount": "variable",
+      "section_id": "ls-bns-316"
+    },
+    {
+      "id": "pun-bns-318",
+      "punishment_type": "imprisonment_or_fine",
+      "duration": "3 years",
+      "amount": "variable",
+      "section_id": "ls-bns-318"
+    },
+    {
+      "id": "pun-bns-318-4",
+      "punishment_type": "imprisonment_and_fine",
+      "duration": "7 years",
+      "amount": "variable",
+      "section_id": "ls-bns-318-4"
+    },
+    {
+      "id": "pun-bns-336",
+      "punishment_type": "imprisonment_or_fine_or_both",
+      "duration": "2 years",
+      "amount": "variable",
+      "section_id": "ls-bns-336"
+    },
+    {
+      "id": "pun-bns-340",
+      "punishment_type": "imprisonment_or_fine_or_both",
+      "duration": "7 years",
+      "amount": "variable",
+      "section_id": "ls-bns-340"
+    },
+    {
+      "id": "pun-bns-351",
+      "punishment_type": "imprisonment_or_fine_or_both",
+      "duration": "2 years",
+      "amount": "variable",
+      "section_id": "ls-bns-351"
+    },
+    {
+      "id": "pun-it-66",
+      "punishment_type": "imprisonment_or_fine_or_both",
+      "duration": "3 years",
+      "amount": "500000 INR",
+      "section_id": "ls-it-66"
+    },
+    {
+      "id": "pun-it-66b",
+      "punishment_type": "imprisonment_or_fine_or_both",
+      "duration": "3 years",
+      "amount": "100000 INR",
+      "section_id": "ls-it-66b"
+    },
+    {
+      "id": "pun-it-66e",
+      "punishment_type": "imprisonment_or_fine_or_both",
+      "duration": "3 years",
+      "amount": "200000 INR",
+      "section_id": "ls-it-66e"
+    },
+    {
+      "id": "pun-it-67",
+      "punishment_type": "imprisonment_and_fine",
+      "duration": "3 years (5 years second conviction)",
+      "amount": "500000 INR (1000000 second conviction)",
+      "section_id": "ls-it-67"
+    }
+  ],
+  "burdens": [
+    {
+      "id": "bop-bns-318",
+      "standard": "beyond_reasonable_doubt",
+      "party": "prosecution",
+      "description": "The prosecution must prove beyond reasonable doubt that the accused intended to deceive the victim from the inception of the transaction.",
+      "section_id": "ls-bns-318"
+    },
+    {
+      "id": "bop-bns-303",
+      "standard": "beyond_reasonable_doubt",
+      "party": "prosecution",
+      "description": "The prosecution must prove that the accused had dishonest intention to take the property at the time of moving it.",
+      "section_id": "ls-bns-303"
+    },
+    {
+      "id": "bop-bns-316",
+      "standard": "beyond_reasonable_doubt",
+      "party": "prosecution",
+      "description": "The prosecution must establish that the accused was entrusted with the property and that the misappropriation was dishonest.",
+      "section_id": "ls-bns-316"
+    },
+    {
+      "id": "bop-bns-336",
+      "standard": "beyond_reasonable_doubt",
+      "party": "prosecution",
+      "description": "The prosecution must prove that the accused made a false document with intent to cause damage or to commit fraud.",
+      "section_id": "ls-bns-336"
+    },
+    {
+      "id": "bop-it-66c",
+      "standard": "beyond_reasonable_doubt",
+      "party": "prosecution",
+      "description": "The prosecution must prove that the accused fraudulently or dishonestly used the electronic signature, password, or unique identification feature of another person.",
+      "section_id": "ls-it-66c"
+    },
+    {
+      "id": "bop-bsa-63",
+      "standard": "preponderance_of_evidence",
+      "party": "proponent",
+      "description": "The party relying on electronic records must satisfy the conditions under BSA Section 63 by producing a certificate from the person in charge of the computer system.",
+      "section_id": "ls-bsa-63"
+    },
+    {
+      "id": "bop-bns-308",
+      "standard": "beyond_reasonable_doubt",
+      "party": "prosecution",
+      "description": "The prosecution must prove that the accused intentionally put the victim in fear and dishonestly induced delivery of property.",
+      "section_id": "ls-bns-308"
+    }
+  ],
+  "caselaws": [
+    {
+      "id": "cl-state-v-murali",
+      "citation": "2024 SCC OnLine Kar 123",
+      "title": "State of Karnataka v. Murali Krishna",
+      "court": "Supreme Court of India",
+      "year": 2024,
+      "summary": "Established that simple failure to fulfill a promise does not constitute cheating under Section 318 BNS unless fraudulent or dishonest intent is shown at the time of making the promise."
+    },
+    {
+      "id": "cl-anvar-pv",
+      "citation": "(2014) 10 SCC 473",
+      "title": "Anvar P.V. v. P.K. Basheer",
+      "court": "Supreme Court of India",
+      "year": 2014,
+      "summary": "Electronic records can be proved only in the manner laid down in Section 65B of the Indian Evidence Act (now BSA Section 63). A certificate is mandatory for admissibility. Oral evidence cannot substitute for the statutory certificate."
+    },
+    {
+      "id": "cl-arjun-pandit",
+      "citation": "(2020) 7 SCC 603",
+      "title": "Arjun Panditrao Khotkar v. Kailash Kushanrao Gorantyal",
+      "court": "Supreme Court of India",
+      "year": 2020,
+      "summary": "Clarified and settled the law on electronic evidence admissibility. Section 65B(4) certificate is mandatory. If the original device is in the possession of the party, they must produce the certificate. However, the court may order production from a third party."
+    },
+    {
+      "id": "cl-shafhi-mohammad",
+      "citation": "(2018) 5 SCC 311",
+      "title": "Shafhi Mohammad v. State of Himachal Pradesh",
+      "court": "Supreme Court of India",
+      "year": 2018,
+      "summary": "Held that the requirement of certificate under Section 65B can be relaxed when the original producing device is not in the possession of the person relying on it. Later clarified by Arjun Panditrao judgment."
+    },
+    {
+      "id": "cl-tomaso-bruno",
+      "citation": "(2015) 7 SCC 178",
+      "title": "Tomaso Bruno v. State of U.P.",
+      "court": "Supreme Court of India",
+      "year": 2015,
+      "summary": "Electronic evidence including CDR (Call Detail Records) is admissible subject to the procedure under Section 65B. Call detail records, if properly certified, are reliable evidence to establish communication patterns."
+    },
+    {
+      "id": "cl-state-v-mohd-afzal",
+      "citation": "(2003) 7 SCC 87",
+      "title": "State (NCT of Delhi) v. Navjot Sandhu",
+      "court": "Supreme Court of India",
+      "year": 2003,
+      "summary": "Call data records and SIM card details can be used as electronic evidence to establish a chain of communication. The court analyzed the evidentiary value of CDRs, IP logs, and server records."
+    }
+  ],
+  "interpretations": [
+    {
+      "id": "int-murali-intent",
+      "rule": "Inception of Intent Rule",
+      "holding": "For section 318 BNS (formerly 420 IPC), fraudulent or dishonest intention must be shown to exist at the time of the inducement. Subsequent breach of contract does not equate to cheating.",
+      "caselaw_id": "cl-state-v-murali",
+      "interprets_section_id": "ls-bns-318"
+    },
+    {
+      "id": "int-anvar-65b-mandatory",
+      "rule": "Mandatory Certificate Rule for Electronic Evidence",
+      "holding": "Electronic records including printouts, CDRs, emails, and digital photographs can only be proved by producing a certificate under BSA Section 63 (formerly IEA Section 65B). No oral evidence can substitute for this certificate.",
+      "caselaw_id": "cl-anvar-pv",
+      "interprets_section_id": "ls-bsa-63"
+    },
+    {
+      "id": "int-arjun-65b-settled",
+      "rule": "Settled Law on Electronic Evidence Certificate",
+      "holding": "The three-judge bench in Arjun Panditrao definitively settled the law: BSA Section 63 certificate is always mandatory. If the party has the original device, they must provide the certificate. For third-party devices, the court may order production.",
+      "caselaw_id": "cl-arjun-pandit",
+      "interprets_section_id": "ls-bsa-63"
+    },
+    {
+      "id": "int-cdr-reliability",
+      "rule": "CDR as Reliable Electronic Evidence",
+      "holding": "Call Detail Records, when properly certified and corroborated with other evidence, constitute reliable electronic evidence to establish communication patterns, co-location, and association between persons.",
+      "caselaw_id": "cl-tomaso-bruno",
+      "interprets_section_id": "ls-bsa-63",
+      "interprets_element_id": "le-bsa63-1"
+    },
+    {
+      "id": "int-breach-not-cheating",
+      "rule": "Civil Breach vs Criminal Cheating Distinction",
+      "holding": "A mere breach of contract cannot give rise to criminal prosecution for cheating unless there is evidence of fraudulent or dishonest intention at the time when the promise was made.",
+      "caselaw_id": "cl-state-v-murali",
+      "interprets_section_id": "ls-bns-318",
+      "interprets_element_id": "le-bns318-2"
+    }
+  ],
+  "cross_references": [
+    {
+      "from_section_id": "ls-bns-318",
+      "to_section_id": "ls-bns-319",
+      "relationship": "specialization",
+      "description": "Section 319 is a specific form of cheating (Section 318) committed through personation"
+    },
+    {
+      "from_section_id": "ls-bns-336",
+      "to_section_id": "ls-bns-340",
+      "relationship": "specialization",
+      "description": "Section 340 is forgery (Section 336) committed specifically for the purpose of cheating"
+    },
+    {
+      "from_section_id": "ls-it-43",
+      "to_section_id": "ls-it-66",
+      "relationship": "aggravation",
+      "description": "Section 66 criminalizes acts under Section 43 when done dishonestly or fraudulently"
+    },
+    {
+      "from_section_id": "ls-it-66c",
+      "to_section_id": "ls-bns-319",
+      "relationship": "parallel",
+      "description": "IT Act identity theft and BNS cheating by personation may apply concurrently for digital impersonation"
+    },
+    {
+      "from_section_id": "ls-bsa-63",
+      "to_section_id": "ls-bsa-61",
+      "relationship": "procedural_requirement",
+      "description": "BSA Section 63 provides the admissibility framework for electronic records whose contents are proved under Section 61"
+    },
+    {
+      "from_section_id": "ls-bns-318",
+      "to_section_id": "ls-bns-318-4",
+      "relationship": "aggravation",
+      "description": "Section 318(4) enhances punishment when cheating is by a person bound to protect the victim's interest"
+    },
+    {
+      "from_section_id": "ls-bns-308",
+      "to_section_id": "ls-bns-351",
+      "relationship": "related",
+      "description": "Criminal intimidation (Section 351) may accompany or precede extortion (Section 308)"
+    },
+    {
+      "from_section_id": "ls-it-66d",
+      "to_section_id": "ls-bns-318",
+      "relationship": "parallel",
+      "description": "IT Act cheating by personation and BNS cheating may both apply when computer resources are used to deceive"
+    },
+    {
+      "from_section_id": "ls-bsa-63",
+      "to_section_id": "ls-bsa-65",
+      "relationship": "complementary",
+      "description": "BSA Section 65 provides for expert evidence on electronic records, complementing the admissibility framework of Section 63"
+    }
+  ]
+}

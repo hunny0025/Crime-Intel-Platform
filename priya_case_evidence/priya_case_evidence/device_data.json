@@ -1,0 +1,68 @@
+{
+  "device_info": {
+    "imei": "354823091234567",
+    "make": "Samsung",
+    "model": "Galaxy A54",
+    "os": "Android 13",
+    "serial_number": "R58T50ABCDE",
+    "seized_date": "2024-11-16T10:00:00+05:30",
+    "seized_by": "SI Rajesh Kumar, Gurugram Cyber Cell",
+    "seizure_memo_number": "SM/CC/GGN/2024/0456"
+  },
+  "browser_history": [
+    {"url": "https://admin.profitsure-pro.com/dashboard", "title": "ProfitSure Admin Panel", "visit_count": 45, "last_visited": "2024-11-14T14:00:00+05:30"},
+    {"url": "https://admin.profitsure-pro.com/users/manage", "title": "Manage Users - ProfitSure", "visit_count": 30, "last_visited": "2024-11-14T13:00:00+05:30"},
+    {"url": "https://admin.profitsure-pro.com/profits/set-display", "title": "Set Display Profits - Admin", "visit_count": 22, "last_visited": "2024-11-12T12:30:00+05:30"},
+    {"url": "https://fakecertificatemaker.net/sebi-template", "title": "SEBI Certificate Generator", "visit_count": 3, "last_visited": "2024-10-28T09:00:00+05:30"},
+    {"url": "https://fakecertificatemaker.net/download/sebi-cert-001.pdf", "title": "Download Certificate", "visit_count": 1, "last_visited": "2024-10-28T09:15:00+05:30"},
+    {"url": "https://profitsure-pro.com", "title": "ProfitSure Pro - Smart Investment", "visit_count": 60, "last_visited": "2024-11-15T08:00:00+05:30"},
+    {"url": "https://api.profitsure-pro.com/v1/withdrawals", "title": "API Withdrawals Endpoint", "visit_count": 12, "last_visited": "2024-11-14T16:00:00+05:30"},
+    {"url": "https://wa.me/group/victim_group_2024", "title": "WhatsApp Group Link Generator", "visit_count": 5, "last_visited": "2024-11-08T20:00:00+05:30"},
+    {"url": "https://namecheap.com/domains/manage", "title": "Namecheap Domain Manager", "visit_count": 8, "last_visited": "2024-11-01T08:00:00+05:30"},
+    {"url": "https://linode.com/dashboard", "title": "Linode Cloud Dashboard", "visit_count": 15, "last_visited": "2024-11-13T22:00:00+05:30"},
+    {"url": "https://screenshot-generator.com/portfolio", "title": "Fake Portfolio Screenshot Generator", "visit_count": 7, "last_visited": "2024-11-09T21:00:00+05:30"},
+    {"url": "https://telegram.org/group/cryptolaunder2024", "title": "Telegram Web - Crypto Group", "visit_count": 18, "last_visited": "2024-11-11T04:00:00+05:30"}
+  ],
+  "installed_apps": [
+    {"app_name": "WhatsApp", "package": "com.whatsapp", "version": "2.24.10.82", "installed_date": "2024-06-15T00:00:00+05:30"},
+    {"app_name": "Telegram", "package": "org.telegram.messenger", "version": "10.6.1", "installed_date": "2024-08-01T00:00:00+05:30"},
+    {"app_name": "Signal", "package": "org.thoughtcrime.securesms", "version": "7.1.3", "installed_date": "2024-09-20T00:00:00+05:30"},
+    {"app_name": "ProfitSureAdmin", "package": "com.profitsure.admin", "version": "3.2.1", "installed_date": "2024-10-05T00:00:00+05:30", "apk_hash_sha256": "a1b2c3d4e5f6789012345678abcdef0123456789abcdef0123456789abcdef01", "source": "sideloaded_apk"},
+    {"app_name": "ICICI iMobile", "package": "com.csam.icici.bank.imobile", "version": "18.2", "installed_date": "2024-05-10T00:00:00+05:30"},
+    {"app_name": "Google Pay", "package": "com.google.android.apps.nbu.paisa.user", "version": "2024.11.01", "installed_date": "2024-01-01T00:00:00+05:30"}
+  ],
+  "location_history": [
+    {"latitude": 28.4595, "longitude": 77.0266, "accuracy_m": 15, "timestamp": "2024-11-01T09:30:00+05:30", "location_label": "Gurugram Sector 29"},
+    {"latitude": 28.4595, "longitude": 77.0266, "accuracy_m": 12, "timestamp": "2024-11-03T10:00:00+05:30", "location_label": "Gurugram Sector 29"},
+    {"latitude": 28.4448, "longitude": 77.0530, "accuracy_m": 20, "timestamp": "2024-11-05T13:30:00+05:30", "location_label": "Gurugram Sector 44"},
+    {"latitude": 28.4595, "longitude": 77.0266, "accuracy_m": 10, "timestamp": "2024-11-07T09:45:00+05:30", "location_label": "Gurugram Sector 29"},
+    {"latitude": 28.4595, "longitude": 77.0266, "accuracy_m": 18, "timestamp": "2024-11-10T08:30:00+05:30", "location_label": "Gurugram Sector 29"},
+    {"latitude": 28.4595, "longitude": 77.0266, "accuracy_m": 14, "timestamp": "2024-11-10T14:00:00+05:30", "location_label": "Gurugram Sector 29"},
+    {"latitude": 28.4448, "longitude": 77.0530, "accuracy_m": 16, "timestamp": "2024-11-12T11:30:00+05:30", "location_label": "Gurugram Sector 44"},
+    {"latitude": 28.4595, "longitude": 77.0266, "accuracy_m": 11, "timestamp": "2024-11-14T10:00:00+05:30", "location_label": "Gurugram Sector 29"}
+  ],
+  "contacts": [
+    {"name": "Priya Sharma", "phone": "+919876543210", "label": "recent"},
+    {"name": "Akash", "phone": "+919988776655", "label": "frequent"},
+    {"name": "Victim Sunita", "phone": "+919123456701", "label": "recent"},
+    {"name": "Victim Meena", "phone": "+919123456702", "label": "recent"},
+    {"name": "Victim Ravi", "phone": "+919123456703", "label": "recent"},
+    {"name": "Victim Pooja", "phone": "+919123456704", "label": "recent"},
+    {"name": "Victim Amit", "phone": "+919123456705", "label": "recent"},
+    {"name": "Victim Neha", "phone": "+919123456706", "label": "recent"},
+    {"name": "Victim Sanjay", "phone": "+919123456707", "label": "recent"},
+    {"name": "Victim Divya", "phone": "+919123456708", "label": "recent"},
+    {"name": "Victim Rahul", "phone": "+919123456709", "label": "recent"},
+    {"name": "Victim Kajal", "phone": "+919123456710", "label": "recent"},
+    {"name": "Victim Deepak", "phone": "+919123456711", "label": "recent"},
+    {"name": "Victim Anita", "phone": "+919123456712", "label": "recent"},
+    {"name": "Server Admin", "phone": "+919555000111", "label": "other"},
+    {"name": "Crypto Guy", "phone": "+919555000222", "label": "other"}
+  ],
+  "photos": [
+    {"filename": "SEBI_Certificate_RohitVerma.jpg", "created_date": "2024-10-28T09:20:00+05:30", "size_bytes": 245000, "description": "Fake SEBI registration certificate with doctored seal"},
+    {"filename": "SEBI_Certificate_template_blank.jpg", "created_date": "2024-10-28T08:50:00+05:30", "size_bytes": 198000, "description": "Blank SEBI certificate template downloaded from certificate generator"},
+    {"filename": "profit_template_40pct.jpg", "created_date": "2024-10-30T14:00:00+05:30", "size_bytes": 312000, "description": "Fake profit screenshot template showing 40% returns"},
+    {"filename": "profit_template_50pct.jpg", "created_date": "2024-11-09T20:30:00+05:30", "size_bytes": 298000, "description": "Fake profit screenshot template showing 50% returns"}
+  ]
+}

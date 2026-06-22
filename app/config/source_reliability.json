@@ -1,0 +1,23 @@
+{
+  "source_reliability": {
+    "cellebrite_ufed": 0.95,
+    "autopsy": 0.90,
+    "magnet_axiom": 0.90,
+    "msab_xry": 0.90,
+    "manual_upload": 0.60,
+    "osint": 0.50,
+    "stylometric_heuristic": 0.30,
+    "unknown": 0.40
+  },
+  "acquisition_confidence": {
+    "physical_extraction": 0.95,
+    "filesystem_extraction": 0.85,
+    "logical_extraction": 0.75,
+    "cloud_legal_process": 0.80,
+    "manual_upload": 0.60,
+    "regex_extraction": 0.70,
+    "nlp_extraction_confirmed": 0.85,
+    "nlp_extraction_unconfirmed": 0.55,
+    "osint": 0.45
+  }
+}

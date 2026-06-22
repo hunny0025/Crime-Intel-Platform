@@ -1,0 +1,3 @@
+# Evidence gap detection rules
+from app.intelligence.gap_rules.communication_silence import check_communication_silence
+from app.intelligence.gap_rules.single_source_identifier import check_single_source_identifier

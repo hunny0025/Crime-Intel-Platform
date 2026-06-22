@@ -1,0 +1,119 @@
+{
+  "categories": [
+    {
+      "id": "cc-financial-fraud",
+      "name": "Financial Fraud",
+      "parent_category_id": null,
+      "children": [
+        {
+          "id": "cc-investment-scam",
+          "name": "Investment Scam",
+          "parent_category_id": "cc-financial-fraud"
+        },
+        {
+          "id": "cc-phishing",
+          "name": "Phishing / Vishing / Smishing",
+          "parent_category_id": "cc-financial-fraud"
+        },
+        {
+          "id": "cc-sim-swap",
+          "name": "SIM Swap Fraud",
+          "parent_category_id": "cc-financial-fraud"
+        },
+        {
+          "id": "cc-upi-fraud",
+          "name": "UPI / Payment Fraud",
+          "parent_category_id": "cc-financial-fraud"
+        },
+        {
+          "id": "cc-loan-app-fraud",
+          "name": "Loan App Fraud / Extortion",
+          "parent_category_id": "cc-financial-fraud"
+        }
+      ]
+    },
+    {
+      "id": "cc-identity-theft",
+      "name": "Identity Theft",
+      "parent_category_id": null,
+      "children": [
+        {
+          "id": "cc-aadhaar-misuse",
+          "name": "Aadhaar / KYC Document Misuse",
+          "parent_category_id": "cc-identity-theft"
+        },
+        {
+          "id": "cc-impersonation",
+          "name": "Impersonation / Fake Profile",
+          "parent_category_id": "cc-identity-theft"
+        },
+        {
+          "id": "cc-credential-theft",
+          "name": "Credential Theft / Account Takeover",
+          "parent_category_id": "cc-identity-theft"
+        }
+      ]
+    },
+    {
+      "id": "cc-online-harassment",
+      "name": "Online Harassment / Extortion",
+      "parent_category_id": null,
+      "children": [
+        {
+          "id": "cc-sextortion",
+          "name": "Sextortion",
+          "parent_category_id": "cc-online-harassment"
+        },
+        {
+          "id": "cc-cyberstalking",
+          "name": "Cyberstalking",
+          "parent_category_id": "cc-online-harassment"
+        },
+        {
+          "id": "cc-cyberbullying",
+          "name": "Cyberbullying / Defamation",
+          "parent_category_id": "cc-online-harassment"
+        }
+      ]
+    },
+    {
+      "id": "cc-hacking",
+      "name": "Hacking / Unauthorized Access",
+      "parent_category_id": null,
+      "children": [
+        {
+          "id": "cc-system-intrusion",
+          "name": "System Intrusion / Data Breach",
+          "parent_category_id": "cc-hacking"
+        },
+        {
+          "id": "cc-ransomware",
+          "name": "Ransomware Attack",
+          "parent_category_id": "cc-hacking"
+        },
+        {
+          "id": "cc-malware",
+          "name": "Malware / Trojan Distribution",
+          "parent_category_id": "cc-hacking"
+        }
+      ]
+    },
+    {
+      "id": "cc-child-safety",
+      "name": "Child Safety Offenses",
+      "parent_category_id": null,
+      "children": [
+        {
+          "id": "cc-csam",
+          "name": "CSAM Distribution / Possession",
+          "parent_category_id": "cc-child-safety"
+        },
+        {
+          "id": "cc-online-grooming",
+          "name": "Online Grooming / Solicitation",
+          "parent_category_id": "cc-child-safety"
+        }
+      ]
+    }
+  ]
+}

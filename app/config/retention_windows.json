@@ -1,0 +1,12 @@
+[
+  {"evidence_type": "telecom_cdr", "retention_days": 365, "regulation": "TRAI", "confidence": "high", "verify_with_legal_team": false},
+  {"evidence_type": "telecom_ipdr", "retention_days": 365, "regulation": "TRAI", "confidence": "high", "verify_with_legal_team": false},
+  {"evidence_type": "cloud_email_provider_domestic", "retention_days": 180, "regulation": "provider_policy", "confidence": "medium", "verify_with_legal_team": true},
+  {"evidence_type": "cloud_storage_provider", "retention_days": null, "regulation": "provider_dependent", "confidence": "low", "verify_with_legal_team": true},
+  {"evidence_type": "social_media_direct_message", "retention_days": 90, "regulation": "provider_policy", "confidence": "low", "verify_with_legal_team": true},
+  {"evidence_type": "exchange_crypto_kyc", "retention_days": 1825, "regulation": "financial_regulation", "confidence": "high", "verify_with_legal_team": false},
+  {"evidence_type": "bank_transaction", "retention_days": 2555, "regulation": "RBI", "confidence": "high", "verify_with_legal_team": false},
+  {"evidence_type": "cctv_footage", "retention_days": 30, "regulation": "varies", "confidence": "low", "verify_with_legal_team": true},
+  {"evidence_type": "cell_tower_ping", "retention_days": 365, "regulation": "TRAI", "confidence": "high", "verify_with_legal_team": false},
+  {"evidence_type": "gps_record", "retention_days": 180, "regulation": "provider_policy", "confidence": "medium", "verify_with_legal_team": true}
+]

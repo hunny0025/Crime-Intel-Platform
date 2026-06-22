@@ -1,0 +1,42 @@
+{
+  "statement_id": "VS-2024-GGN-0456",
+  "statement_type": "victim_statement",
+  "recorded_date": "2024-11-15T11:00:00+05:30",
+  "recorded_by": "SI Rajesh Kumar, Badge No. HR-CC-4521",
+  "recording_location": "Gurugram Cyber Crime Police Station",
+  "victim": {
+    "full_name": "Priya Sharma",
+    "gender": "Female",
+    "age": 28,
+    "phone": "+919876543210",
+    "email": "priya.sharma.dev@gmail.com",
+    "address": "Flat 402, Tower B, DLF Garden City, Sector 14, Gurugram, Haryana - 122001",
+    "occupation": "Software Engineer",
+    "employer": "Infosys Ltd, Gurugram Campus",
+    "id_proof": "Aadhaar Card ending 7845"
+  },
+  "complaint_details": {
+    "date_of_first_contact": "2024-11-01T10:15:00+05:30",
+    "mode_of_contact": "Unsolicited WhatsApp message from +918765432109",
+    "accused_identity_claimed": "Rohit Verma, self-described as SEBI Registered Investment Advisor with registration number INH000009876",
+    "accused_phone": "+918765432109",
+    "platform_used": "WhatsApp for communication, ProfitSure Pro mobile app (APK downloaded from profitsure-pro.com, NOT from Google Play Store) for fake portfolio display",
+    "fraud_website": "profitsure-pro.com",
+    "what_accused_told_victim": "Claimed to be SEBI registered advisor. Guaranteed 30-40% monthly returns through algo-trading. Showed fake SEBI certificate. Claimed 15,000+ verified investors. Showed fake profit screenshots. After investment, showed fake growing portfolio on app. When withdrawal requested, demanded Rs 50,000 as tax clearance fee claiming it was government requirement.",
+    "total_amount_lost_inr": 470000,
+    "transactions": [
+      {"date": "2024-11-07", "amount_inr": 100000, "upi_ref": "UTR001234567890", "receiver": "RS Trading Services, A/c ending 7832, ICICI Bank"},
+      {"date": "2024-11-10", "amount_inr": 200000, "upi_ref": "UTR001234567891", "receiver": "RS Trading Services, A/c ending 7832, ICICI Bank"},
+      {"date": "2024-11-12", "amount_inr": 170000, "upi_ref": "UTR001234567892", "receiver": "RS Trading Services, A/c ending 7832, ICICI Bank"}
+    ],
+    "how_fraud_discovered": "When I requested withdrawal of Rs 3,00,000 from the app, the request was shown as pending. When I contacted Rohit Verma, he demanded Rs 50,000 as tax clearance fee claiming it was mandatory under SEBI rules. I checked online and confirmed SEBI does not charge any such fee. I then tried calling the SEBI helpline number Rohit had given me (1800-XXX-XXXX) and it was not a real SEBI number. I called the real National Cyber Crime Helpline 1930 and filed this complaint.",
+    "evidence_provided_by_victim": [
+      "WhatsApp chat screenshots with +918765432109",
+      "UPI transaction receipts (3 transactions)",
+      "ProfitSure Pro app screenshots showing fake portfolio",
+      "Fake SEBI certificate PDF received from accused",
+      "Bank statement from SBI showing debits"
+    ]
+  },
+  "narrative_statement": "I, Priya Sharma, resident of Sector 14 Gurugram, state that on 1st November 2024, I received an unsolicited WhatsApp message from phone number +918765432109. The person identified himself as Rohit Verma and claimed to be a SEBI registered investment advisor. He sent me a PDF document showing his SEBI registration certificate and a brochure for an investment platform called ProfitSure Pro. Over the next few days, he called me multiple times and convinced me that his platform provides guaranteed returns of 30-40% per month through algo-trading technology. He asked me to download the ProfitSure Pro app from a link he sent on WhatsApp and transfer money to an account named RS Trading Services at ICICI Bank. Between 7th November and 12th November 2024, I transferred a total of Rs 4,70,000 across three UPI transactions. The app showed that my portfolio was growing rapidly. On 14th November, when I tried to withdraw Rs 3,00,000, the app showed the withdrawal as pending. When I contacted Rohit, he told me I need to pay Rs 50,000 as tax clearance fee, claiming it is a government requirement for high-value withdrawals. I realized this was a fraud. I called the national cyber crime helpline 1930 and reported the incident. I request the police to investigate this matter, recover my money, and take action against the accused."
+}

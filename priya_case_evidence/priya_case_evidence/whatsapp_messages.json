@@ -1,0 +1,227 @@
+[
+  {
+    "message_id": "WA-MSG-001",
+    "sender_phone": "+918765432109",
+    "receiver_phone": "+919876543210",
+    "content": "Hello Priya ji, I am Rohit Verma, SEBI Registered Investment Advisor (Reg No: INH000009876). I specialize in algo-trading strategies with guaranteed monthly returns of 30-40%. Are you interested in growing your savings?",
+    "timestamp": "2024-11-01T10:15:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "text"
+  },
+  {
+    "message_id": "WA-MSG-002",
+    "sender_phone": "+919876543210",
+    "receiver_phone": "+918765432109",
+    "content": "Who are you? How did you get my number?",
+    "timestamp": "2024-11-01T10:32:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "text"
+  },
+  {
+    "message_id": "WA-MSG-003",
+    "sender_phone": "+918765432109",
+    "receiver_phone": "+919876543210",
+    "content": "Madam, your number was recommended by your colleague. I help IT professionals invest smartly. I am sending you my SEBI registration certificate and our company profile for your reference.",
+    "timestamp": "2024-11-01T10:45:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "text"
+  },
+  {
+    "message_id": "WA-MSG-004",
+    "sender_phone": "+918765432109",
+    "receiver_phone": "+919876543210",
+    "content": "[SEBI_Registration_Certificate_RohitVerma.pdf]",
+    "timestamp": "2024-11-01T10:46:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "document"
+  },
+  {
+    "message_id": "WA-MSG-005",
+    "sender_phone": "+918765432109",
+    "receiver_phone": "+919876543210",
+    "content": "[ProfitSure_Pro_Investment_Brochure.pdf] - Check our past performance, all verified by independent auditors.",
+    "timestamp": "2024-11-02T09:30:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "document"
+  },
+  {
+    "message_id": "WA-MSG-006",
+    "sender_phone": "+918765432109",
+    "receiver_phone": "+919876543210",
+    "content": "Priya ji, did you check the brochure? Our ProfitSure Pro app is giving 42% return this month. I am attaching live screenshots from our platform. Many clients from your company are already investing.",
+    "timestamp": "2024-11-03T11:00:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "text"
+  },
+  {
+    "message_id": "WA-MSG-007",
+    "sender_phone": "+918765432109",
+    "receiver_phone": "+919876543210",
+    "content": "[profit_screenshot_oct2024.jpg] - See, this client invested 2 lakhs and earned 84,000 profit in just one month.",
+    "timestamp": "2024-11-03T11:02:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "image"
+  },
+  {
+    "message_id": "WA-MSG-008",
+    "sender_phone": "+919876543210",
+    "receiver_phone": "+918765432109",
+    "content": "This looks interesting but I am not sure. Is this really SEBI approved? How do I verify?",
+    "timestamp": "2024-11-05T14:20:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "text"
+  },
+  {
+    "message_id": "WA-MSG-009",
+    "sender_phone": "+918765432109",
+    "receiver_phone": "+919876543210",
+    "content": "Of course madam! You can call the SEBI helpline number 1800-XXX-XXXX to verify my registration. Also check our website profitsure-pro.com where all our certifications are displayed. We have 15,000+ verified investors.",
+    "timestamp": "2024-11-05T14:35:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "text"
+  },
+  {
+    "message_id": "WA-MSG-010",
+    "sender_phone": "+919876543210",
+    "receiver_phone": "+918765432109",
+    "content": "Ok I checked the website it looks professional. What is the minimum investment?",
+    "timestamp": "2024-11-05T18:10:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "text"
+  },
+  {
+    "message_id": "WA-MSG-011",
+    "sender_phone": "+918765432109",
+    "receiver_phone": "+919876543210",
+    "content": "Minimum is Rs 50,000 but I recommend starting with Rs 1 lakh for best returns. Transfer to our trading account and download the ProfitSure Pro app to track your portfolio in real time. Here is the app link: https://profitsure-pro.com/download/app.apk",
+    "timestamp": "2024-11-07T10:30:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "text"
+  },
+  {
+    "message_id": "WA-MSG-012",
+    "sender_phone": "+918765432109",
+    "receiver_phone": "+919876543210",
+    "content": "Transfer to this UPI: rstradingservices@ybl or account RS Trading Services, A/c ending 7832, ICICI Bank. Send me the screenshot once done.",
+    "timestamp": "2024-11-07T10:32:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "text"
+  },
+  {
+    "message_id": "WA-MSG-013",
+    "sender_phone": "+919876543210",
+    "receiver_phone": "+918765432109",
+    "content": "Done. I transferred Rs 1,00,000. UTR: UTR001234567890. Please confirm.",
+    "timestamp": "2024-11-07T14:25:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "text"
+  },
+  {
+    "message_id": "WA-MSG-014",
+    "sender_phone": "+918765432109",
+    "receiver_phone": "+919876543210",
+    "content": "Received! Your investment is now active on ProfitSure Pro. Login to the app and you can see your portfolio growing in real time. I will personally manage your trades. Congratulations on starting your wealth journey!",
+    "timestamp": "2024-11-07T14:40:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "text"
+  },
+  {
+    "message_id": "WA-MSG-015",
+    "sender_phone": "+918765432109",
+    "receiver_phone": "+919876543210",
+    "content": "[app_portfolio_screenshot_day3.jpg] - Priya ji look! Your Rs 1 lakh has already grown to Rs 1,28,000 in just 3 days! If you invest more now during this bull phase, the returns will compound faster.",
+    "timestamp": "2024-11-10T09:15:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "image"
+  },
+  {
+    "message_id": "WA-MSG-016",
+    "sender_phone": "+919876543210",
+    "receiver_phone": "+918765432109",
+    "content": "Wow this is amazing! I want to invest Rs 2 lakhs more. Same account?",
+    "timestamp": "2024-11-10T11:30:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "text"
+  },
+  {
+    "message_id": "WA-MSG-017",
+    "sender_phone": "+918765432109",
+    "receiver_phone": "+919876543210",
+    "content": "Yes same account. Hurry, the market window closes at 3pm today!",
+    "timestamp": "2024-11-10T11:35:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "text"
+  },
+  {
+    "message_id": "WA-MSG-018",
+    "sender_phone": "+919876543210",
+    "receiver_phone": "+918765432109",
+    "content": "Transferred Rs 2,00,000. UTR: UTR001234567891.",
+    "timestamp": "2024-11-10T11:48:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "text"
+  },
+  {
+    "message_id": "WA-MSG-019",
+    "sender_phone": "+918765432109",
+    "receiver_phone": "+919876543210",
+    "content": "Your total portfolio is now Rs 4,56,000 including profits. I am putting everything into high-yield algo trades. You should invest one more time to reach the premium tier which gives 50% monthly returns.",
+    "timestamp": "2024-11-12T12:00:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "text"
+  },
+  {
+    "message_id": "WA-MSG-020",
+    "sender_phone": "+919876543210",
+    "receiver_phone": "+918765432109",
+    "content": "Ok I will transfer Rs 1,70,000 more. This is my last savings. UTR: UTR001234567892.",
+    "timestamp": "2024-11-12T16:35:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "text"
+  },
+  {
+    "message_id": "WA-MSG-021",
+    "sender_phone": "+918765432109",
+    "receiver_phone": "+919876543210",
+    "content": "Congratulations! You are now a premium member. Your portfolio value is Rs 7,82,000. You can request withdrawal anytime through the app.",
+    "timestamp": "2024-11-12T16:50:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "text"
+  },
+  {
+    "message_id": "WA-MSG-022",
+    "sender_phone": "+919876543210",
+    "receiver_phone": "+918765432109",
+    "content": "I want to withdraw Rs 3,00,000. I submitted the withdrawal request on the app but it says pending.",
+    "timestamp": "2024-11-14T10:00:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "text"
+  },
+  {
+    "message_id": "WA-MSG-023",
+    "sender_phone": "+918765432109",
+    "receiver_phone": "+919876543210",
+    "content": "Priya ji, for withdrawals above Rs 1 lakh, government requires a tax clearance fee of Rs 50,000 to be paid first. This is standard SEBI regulation for high-value algo-trading accounts. Once you pay, your full amount will be released within 24 hours.",
+    "timestamp": "2024-11-14T11:30:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "text"
+  },
+  {
+    "message_id": "WA-MSG-024",
+    "sender_phone": "+919876543210",
+    "receiver_phone": "+918765432109",
+    "content": "What? Tax clearance fee? This sounds wrong. I checked online and SEBI does not charge any such fee. Are you scamming me?",
+    "timestamp": "2024-11-14T15:00:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "text"
+  },
+  {
+    "message_id": "WA-MSG-025",
+    "sender_phone": "+918765432109",
+    "receiver_phone": "+919876543210",
+    "content": "Madam you are misunderstanding. This is standard procedure. If you do not pay the tax clearance within 48 hours your account will be frozen and you will lose everything. I am trying to help you.",
+    "timestamp": "2024-11-14T15:30:00+05:30",
+    "platform": "whatsapp",
+    "message_type": "text"
+  }
+]

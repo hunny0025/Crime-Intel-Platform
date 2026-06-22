@@ -1,0 +1,53 @@
+{
+  "domain": "profitsure-pro.com",
+  "query_timestamp": "2024-11-16T12:00:00+05:30",
+  "registration": {
+    "registrar": "Namecheap Inc",
+    "registered_date": "2024-10-07T00:00:00Z",
+    "expiry_date": "2025-10-07T00:00:00Z",
+    "registrant": "Privacy Protected - WhoisGuard",
+    "registrant_email": "redacted@whoisguard.com",
+    "name_servers": ["ns1.linode.com", "ns2.linode.com"],
+    "days_since_registration": 25,
+    "suspicious_indicators": ["recently_registered", "privacy_protected", "disposable_registrant"]
+  },
+  "hosting": {
+    "ip_address": "45.33.32.156",
+    "hosting_provider": "Linode LLC",
+    "datacenter_location": "Singapore",
+    "asn": "AS63949",
+    "reverse_dns": "li1234-156.members.linode.com"
+  },
+  "ssl_certificate": {
+    "issuer": "Let's Encrypt Authority X3",
+    "issued_date": "2024-10-08T00:00:00Z",
+    "expiry_date": "2025-01-06T00:00:00Z",
+    "serial_number": "04:AB:CD:EF:12:34:56:78",
+    "subject_alt_names": ["profitsure-pro.com", "*.profitsure-pro.com"]
+  },
+  "certificate_transparency_logs": [
+    {"subdomain": "profitsure-pro.com", "first_seen": "2024-10-08T00:00:00Z"},
+    {"subdomain": "app.profitsure-pro.com", "first_seen": "2024-10-08T00:00:00Z"},
+    {"subdomain": "admin.profitsure-pro.com", "first_seen": "2024-10-09T00:00:00Z"},
+    {"subdomain": "api.profitsure-pro.com", "first_seen": "2024-10-10T00:00:00Z"}
+  ],
+  "mx_records": [
+    {"priority": 10, "server": "mx1.disposablemail.xyz", "suspicious": true}
+  ],
+  "related_domains": [
+    {"domain": "profitsure-app.com", "registered_date": "2024-10-07T00:00:00Z", "registrar": "Namecheap Inc", "same_registrant_pattern": true},
+    {"domain": "profitsuretrading.com", "registered_date": "2024-10-06T00:00:00Z", "registrar": "Namecheap Inc", "same_registrant_pattern": true},
+    {"domain": "sureprofitinvest.com", "registered_date": "2024-10-08T00:00:00Z", "registrar": "Namecheap Inc", "same_registrant_pattern": true}
+  ],
+  "risk_assessment": {
+    "overall_risk": "critical",
+    "factors": [
+      "Domain registered only 25 days before first victim contact",
+      "Privacy-protected registration hides operator identity",
+      "Hosted on overseas server (Singapore) despite targeting Indian victims",
+      "Disposable email MX records suggest temporary operation",
+      "Multiple related domains registered in bulk suggest organized fraud operation",
+      "SSL certificate issued one day after registration - automated setup"
+    ]
+  }
+}

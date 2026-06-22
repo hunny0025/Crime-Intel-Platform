@@ -1,0 +1,31 @@
+source_format: "autopsy_sqlite"
+
+# Mappings for tsk_files → generic_file
+file_mappings:
+  - source_field: "name"
+    canonical_field: "file_name"
+    transform: "to_lowercase"
+  - source_field: "size"
+    canonical_field: "file_size"
+    transform: "to_string"
+  - source_field: "crtime"
+    canonical_field: "collection_timestamp_utc"
+    transform: "to_utc_timestamp"
+  - source_field: "parent_path"
+    canonical_field: "file_path"
+    transform: null
+
+# Mappings for blackboard_artifacts → communication_record
+artifact_mappings:
+  - source_field: "value_text"
+    canonical_field: "content"
+    transform: null
+  - source_field: "artifact_type_name"
+    canonical_field: "record_type"
+    transform: "to_lowercase"
+
+# Output types by artifact category
+output_types:
+  tsk_files: "generic_file"
+  TSK_WEB_HISTORY: "communication_record"
+  TSK_MESSAGE: "communication_record"
