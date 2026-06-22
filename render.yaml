@@ -12,10 +12,6 @@ services:
     dockerfilePath: Dockerfile.neo4j
     dockerContext: .
     plan: free
-    disk:
-      name: neo4j-data
-      mountPath: /data
-      sizeGB: 1
     envVars:
       - key: NEO4J_AUTH
         value: neo4j/crimeintel2024
@@ -27,10 +23,6 @@ services:
     dockerfilePath: Dockerfile.minio
     dockerContext: .
     plan: free
-    disk:
-      name: minio-data
-      mountPath: /data
-      sizeGB: 1
     envVars:
       - key: MINIO_ROOT_USER
         value: minioadmin
