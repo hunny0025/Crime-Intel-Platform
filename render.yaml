@@ -15,6 +15,12 @@ services:
     envVars:
       - key: NEO4J_AUTH
         value: neo4j/crimeintel2024
+      - key: NEO4J_server_memory_heap_initial__size
+        value: 128M
+      - key: NEO4J_server_memory_heap_max__size
+        value: 256M
+      - key: NEO4J_server_memory_pagecache_size
+        value: 64M
 
   # MinIO Object Storage
   - type: web
