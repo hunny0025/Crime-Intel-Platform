@@ -1,5 +1,4 @@
 services:
-  # OSINT Intelligence Service
   - type: web
     name: crime-intel-osint
     env: docker
@@ -19,7 +18,6 @@ services:
       - key: NEO4J_DATABASE
         value: neo4j
 
-  # Main FastAPI Backend Application
   - type: web
     name: crime-intel-backend
     env: docker
@@ -43,9 +41,9 @@ services:
       - key: NEO4J_DATABASE
         value: neo4j
       - key: MINIO_ENDPOINT
-        value: "local" # Triggers automatic local folder storage fallback
+        value: "local"
       - key: KAFKA_BOOTSTRAP_SERVERS
-        value: "" # Bypasses Kafka in favor of the automatic In-Memory Broker fallback
+        value: ""
       - key: KAFKA_CONSUMER_GROUP
         value: aire-workers
       - key: SKIP_WAIT_DEPENDENCIES
