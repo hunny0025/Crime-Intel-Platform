@@ -12,6 +12,7 @@ services:
     dockerfilePath: Dockerfile.neo4j
     dockerContext: .
     plan: free
+    port: 7474
     envVars:
       - key: NEO4J_AUTH
         value: neo4j/crimeintel2024
@@ -37,6 +38,7 @@ services:
     dockerfilePath: Dockerfile.minio
     dockerContext: .
     plan: free
+    port: 9000
     envVars:
       - key: MINIO_ROOT_USER
         value: minioadmin
@@ -50,6 +52,7 @@ services:
     dockerfilePath: osint-service/Dockerfile
     dockerContext: osint-service
     plan: free
+    port: 8001
     envVars:
       - key: DATABASE_URL
         fromDatabase:
@@ -71,6 +74,7 @@ services:
     dockerfilePath: Dockerfile
     dockerContext: .
     plan: free
+    port: 8000
     envVars:
       - key: DATABASE_URL
         fromDatabase:
