@@ -4,7 +4,6 @@ services:
     env: docker
     dockerfilePath: osint-service/Dockerfile
     dockerContext: osint-service
-    plan: free
     port: 8001
     envVars:
       - key: DATABASE_URL
@@ -21,9 +20,6 @@ services:
   - type: web
     name: crime-intel-backend
     env: docker
-    dockerfilePath: Dockerfile
-    dockerContext: .
-    plan: free
     port: 8000
     envVars:
       - key: DATABASE_URL
