@@ -1,9 +1,3 @@
-databases:
-  - name: crime-intel-postgres
-    databaseName: crime_intel
-    user: cip
-    plan: free
-
 services:
   # Neo4j Graph Database
   - type: web
@@ -12,7 +6,6 @@ services:
     dockerfilePath: Dockerfile.neo4j
     dockerContext: .
     plan: free
-    port: 7474
     envVars:
       - key: NEO4J_AUTH
         sync: false # Set as neo4j/<password> in Render dashboard
@@ -38,7 +31,6 @@ services:
     dockerfilePath: Dockerfile.minio
     dockerContext: .
     plan: free
-    port: 9000
     envVars:
       - key: MINIO_ROOT_USER
         value: minioadmin
@@ -52,12 +44,9 @@ services:
     dockerfilePath: osint-service/Dockerfile
     dockerContext: osint-service
     plan: free
-    port: 8001
     envVars:
       - key: DATABASE_URL
-        fromDatabase:
-          name: crime-intel-postgres
-          property: connectionString
+        sync: false # Set manual DB connection string (e.g. from Neon/Supabase or manual Render DB)
       - key: NEO4J_URI
         value: bolt://crime-intel-neo4j:7687
       - key: NEO4J_USER
@@ -74,12 +63,9 @@ services:
     dockerfilePath: Dockerfile
     dockerContext: .
     plan: free
-    port: 8000
     envVars:
       - key: DATABASE_URL
-        fromDatabase:
-          name: crime-intel-postgres
-          property: connectionString
+        sync: false # Set manual DB connection string (e.g. from Neon/Supabase or manual Render DB)
       - key: TEST_DATABASE_URL
         value: ""
       - key: NEO4J_URI
