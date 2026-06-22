@@ -15,12 +15,20 @@ services:
     envVars:
       - key: NEO4J_AUTH
         value: neo4j/crimeintel2024
+      # Neo4j 5.x Memory Configuration (Lowercase 'm')
       - key: NEO4J_server_memory_heap_initial__size
-        value: 128M
+        value: 128m
       - key: NEO4J_server_memory_heap_max__size
-        value: 256M
+        value: 128m
       - key: NEO4J_server_memory_pagecache_size
-        value: 64M
+        value: 64m
+      # Legacy Neo4j 4.x Memory Configuration Fallback
+      - key: NEO4J_dbms_memory_heap_initial__size
+        value: 128m
+      - key: NEO4J_dbms_memory_heap_max__size
+        value: 128m
+      - key: NEO4J_dbms_memory_pagecache_size
+        value: 64m
 
   # MinIO Object Storage
   - type: web
