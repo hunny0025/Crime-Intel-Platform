@@ -15,7 +15,7 @@ services:
     port: 7474
     envVars:
       - key: NEO4J_AUTH
-        value: neo4j/crimeintel2024
+        sync: false # Set as neo4j/<password> in Render dashboard
       # Neo4j 5.x Memory Configuration (Lowercase 'm')
       - key: NEO4J_server_memory_heap_initial__size
         value: 128m
@@ -43,7 +43,7 @@ services:
       - key: MINIO_ROOT_USER
         value: minioadmin
       - key: MINIO_ROOT_PASSWORD
-        value: minioadmin
+        sync: false # Set secure root password in Render dashboard
 
   # OSINT Intelligence Service
   - type: web
@@ -63,7 +63,7 @@ services:
       - key: NEO4J_USER
         value: neo4j
       - key: NEO4J_PASSWORD
-        value: crimeintel2024
+        sync: false # Configured in Render dashboard
       - key: NEO4J_DATABASE
         value: neo4j
 
@@ -87,7 +87,7 @@ services:
       - key: NEO4J_USER
         value: neo4j
       - key: NEO4J_PASSWORD
-        value: crimeintel2024
+        sync: false # Configured in Render dashboard
       - key: NEO4J_DATABASE
         value: neo4j
       - key: MINIO_ENDPOINT
@@ -95,7 +95,7 @@ services:
       - key: MINIO_ACCESS_KEY
         value: minioadmin
       - key: MINIO_SECRET_KEY
-        value: minioadmin
+        sync: false # Configured in Render dashboard
       - key: MINIO_BUCKET
         value: evidence
       - key: MINIO_SECURE
