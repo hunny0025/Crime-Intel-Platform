@@ -50,6 +50,9 @@ class Settings(BaseSettings):
     # Audit log retention days
     AUDIT_LOG_RETENTION_DAYS: int = 365 * 7  # 7 years per forensic standards
 
+    # Backend base URL for relative/absolute download link resolution
+    BACKEND_URL: str = "http://localhost:8000"
+
     model_config = ConfigDict(env_file=".env", extra="ignore")
 
 

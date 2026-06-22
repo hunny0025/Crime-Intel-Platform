@@ -1,42 +1,10 @@
+databases:
+  - name: crime-intel-postgres
+    databaseName: crime_intel
+    user: cip
+    plan: free
+
 services:
-  # Neo4j Graph Database
-  - type: web
-    name: crime-intel-neo4j
-    env: docker
-    dockerfilePath: Dockerfile.neo4j
-    dockerContext: .
-    plan: free
-    envVars:
-      - key: NEO4J_AUTH
-        sync: false # Set as neo4j/<password> in Render dashboard
-      # Neo4j 5.x Memory Configuration (Lowercase 'm')
-      - key: NEO4J_server_memory_heap_initial__size
-        value: 128m
-      - key: NEO4J_server_memory_heap_max__size
-        value: 128m
-      - key: NEO4J_server_memory_pagecache_size
-        value: 64m
-      # Legacy Neo4j 4.x Memory Configuration Fallback
-      - key: NEO4J_dbms_memory_heap_initial__size
-        value: 128m
-      - key: NEO4J_dbms_memory_heap_max__size
-        value: 128m
-      - key: NEO4J_dbms_memory_pagecache_size
-        value: 64m
-
-  # MinIO Object Storage
-  - type: web
-    name: crime-intel-minio
-    env: docker
-    dockerfilePath: Dockerfile.minio
-    dockerContext: .
-    plan: free
-    envVars:
-      - key: MINIO_ROOT_USER
-        value: minioadmin
-      - key: MINIO_ROOT_PASSWORD
-        sync: false # Set secure root password in Render dashboard
-
   # OSINT Intelligence Service
   - type: web
     name: crime-intel-osint
@@ -44,15 +12,18 @@ services:
     dockerfilePath: osint-service/Dockerfile
     dockerContext: osint-service
     plan: free
+    port: 8001
     envVars:
       - key: DATABASE_URL
-        sync: false # Set manual DB connection string (e.g. from Neon/Supabase or manual Render DB)
+        fromDatabase:
+          name: crime-intel-postgres
+          property: connectionString
       - key: NEO4J_URI
-        value: bolt://crime-intel-neo4j:7687
+        sync: false # Enter your Neo4j AuraDB bolt/neo4j+s URI here (e.g. neo4j+s://xxxxxx.databases.neo4j.io)
       - key: NEO4J_USER
         value: neo4j
       - key: NEO4J_PASSWORD
-        sync: false # Configured in Render dashboard
+        sync: false # Enter your Neo4j AuraDB password here
       - key: NEO4J_DATABASE
         value: neo4j
 
@@ -63,34 +34,31 @@ services:
     dockerfilePath: Dockerfile
     dockerContext: .
     plan: free
+    port: 8000
     envVars:
       - key: DATABASE_URL
-        sync: false # Set manual DB connection string (e.g. from Neon/Supabase or manual Render DB)
+        fromDatabase:
+          name: crime-intel-postgres
+          property: connectionString
       - key: TEST_DATABASE_URL
         value: ""
+      - key: BACKEND_URL
+        sync: false # Enter your deployed Render backend URL here (e.g., https://crime-intel-backend.onrender.com)
       - key: NEO4J_URI
-        value: bolt://crime-intel-neo4j:7687
+        sync: false # Enter your Neo4j AuraDB bolt/neo4j+s URI here (e.g. neo4j+s://xxxxxx.databases.neo4j.io)
       - key: NEO4J_USER
         value: neo4j
       - key: NEO4J_PASSWORD
-        sync: false # Configured in Render dashboard
+        sync: false # Enter your Neo4j AuraDB password here
       - key: NEO4J_DATABASE
         value: neo4j
       - key: MINIO_ENDPOINT
-        value: crime-intel-minio:9000
-      - key: MINIO_ACCESS_KEY
-        value: minioadmin
-      - key: MINIO_SECRET_KEY
-        sync: false # Configured in Render dashboard
-      - key: MINIO_BUCKET
-        value: evidence
-      - key: MINIO_SECURE
-        value: "false"
+        value: "local" # Triggers automatic local folder storage fallback
       - key: KAFKA_BOOTSTRAP_SERVERS
-        value: "" # User to provide their own Kafka endpoint (e.g. Upstash) or leave blank if skipped
+        value: "" # Bypasses Kafka in favor of the automatic In-Memory Broker fallback
       - key: KAFKA_CONSUMER_GROUP
         value: aire-workers
       - key: SKIP_WAIT_DEPENDENCIES
-        value: "true" # Bypass blocking startup checks if external broker is not yet configured
+        value: "true"
       - key: ALLOWED_ORIGINS
-        value: '["http://localhost:3000", "https://crime-intel-frontend.vercel.app"]'
+        sync: false # Enter CORS origins as JSON array, e.g. ["http://localhost:3000", "https://your-frontend.vercel.app"]

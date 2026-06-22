@@ -4,7 +4,7 @@ import hashlib
 import uuid
 from datetime import datetime, timezone
 
-from fastapi import APIRouter, Depends, HTTPException, UploadFile, File, Form
+from fastapi import APIRouter, Depends, HTTPException, UploadFile, File, Form, Response
 from sqlalchemy.orm import Session
 
 from app.db.session import get_db
@@ -205,6 +205,32 @@ def get_evidence(artifact_id: uuid.UUID, db: Session = Depends(get_db)):
         pass
 
     return response
+
+
+@router.get("/evidence/{artifact_id}/download")
+def download_evidence_file(artifact_id: uuid.UUID, db: Session = Depends(get_db)):
+    """Directly download the evidence file content."""
+    artifact = (
+        db.query(EvidenceArtifact)
+        .filter(EvidenceArtifact.artifact_id == artifact_id)
+        .first()
+    )
+    if not artifact:
+        raise HTTPException(status_code=404, detail="Artifact not found")
+
+    minio = get_minio_client()
+    try:
+        content = minio.download_bytes(artifact.content_pointer)
+        filename = artifact.content_pointer.split('/')[-1]
+        return Response(
+            content=content,
+            media_type="application/octet-stream",
+            headers={
+                "Content-Disposition": f"attachment; filename={filename}"
+            }
+        )
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Failed to retrieve file content: {e}")
 
 
 @router.get("/cases/{case_id}/evidence", response_model=list[EvidenceArtifactResponse])

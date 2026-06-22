@@ -25,17 +25,49 @@ class KafkaConsumer:
         bootstrap_servers: Optional[str] = None,
     ) -> None:
         self._bootstrap = bootstrap_servers or settings.KAFKA_BOOTSTRAP_SERVERS
-        self._consumer = Consumer({
-            "bootstrap.servers": self._bootstrap,
-            "group.id": group_id,
-            "auto.offset.reset": "earliest",
-            "enable.auto.commit": True,
-        })
-        self._consumer.subscribe(topics)
-        self._running = False
+        self.local_mode = False
+        self.topics = topics
+
+        if not self._bootstrap or self._bootstrap == "":
+            logger.info("Kafka bootstrap servers empty, enabling In-Memory Consumer fallback")
+            self.local_mode = True
+            import queue
+            self.q = queue.Queue()
+            from app.events.producer import in_memory_broker
+            for t in self.topics:
+                in_memory_broker.subscribe(t, self.q)
+            self._running = False
+            return
+
+        try:
+            self._consumer = Consumer({
+                "bootstrap.servers": self._bootstrap,
+                "group.id": group_id,
+                "auto.offset.reset": "earliest",
+                "enable.auto.commit": True,
+            })
+            self._consumer.subscribe(topics)
+            self._running = False
+        except Exception as e:
+            logger.warning("Failed to initialize Kafka consumer, falling back to In-Memory Consumer: %s", e)
+            self.local_mode = True
+            import queue
+            self.q = queue.Queue()
+            from app.events.producer import in_memory_broker
+            for t in self.topics:
+                in_memory_broker.subscribe(t, self.q)
+            self._running = False
 
     def poll_once(self, timeout: float = 1.0) -> Optional[EventEnvelope]:
         """Poll for a single message and deserialize it."""
+        if self.local_mode:
+            import queue
+            try:
+                envelope = self.q.get(timeout=timeout)
+                return envelope
+            except queue.Empty:
+                return None
+
         msg = self._consumer.poll(timeout)
         if msg is None:
             return None
@@ -53,7 +85,19 @@ class KafkaConsumer:
 
     def close(self) -> None:
         self._running = False
-        self._consumer.close()
+        if self.local_mode:
+            try:
+                from app.events.producer import in_memory_broker
+                for t in self.topics:
+                    in_memory_broker.unsubscribe(t, self.q)
+            except Exception as e:
+                logger.warning("Failed to unsubscribe in_memory_broker: %s", e)
+        else:
+            try:
+                self._consumer.close()
+            except Exception:
+                pass
+
 
 
 class EvidenceNormalizationWorker:
