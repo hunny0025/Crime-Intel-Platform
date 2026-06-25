@@ -45,3 +45,15 @@ yarn-error.log*
 # OS
 .DS_Store
 Thumbs.db
+
+# Databases & local volumes
+*.db
+*.sqlite
+*.sqlite3
+postgres_data/
+minio_data/
+
+# Investigations & reports
+reports/
+investigations/
+

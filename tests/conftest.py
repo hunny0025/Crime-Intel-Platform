@@ -10,6 +10,7 @@ from sqlalchemy.orm import sessionmaker
 # ── Lazy imports to avoid crashing when services are unavailable ──────────
 
 _DB_AVAILABLE = False
+_db_checked = False
 _test_engine = None
 _TestSessionLocal = None
 
@@ -22,10 +23,12 @@ def _get_settings():
 
 def _init_test_db():
     """Initialize the test database engine lazily. Returns True if successful."""
-    global _DB_AVAILABLE, _test_engine, _TestSessionLocal
+    global _DB_AVAILABLE, _db_checked, _test_engine, _TestSessionLocal
 
-    if _test_engine is not None:
+    if _db_checked:
         return _DB_AVAILABLE
+
+    _db_checked = True
 
     try:
         settings = _get_settings()
